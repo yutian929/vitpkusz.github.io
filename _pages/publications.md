@@ -29,9 +29,31 @@ description:
     font-weight: 600 !important;
     font-size: 2.0rem !important;
   }
+  
+  /* Style for tags display under publications */
+  .publication-tags-display {
+    margin-top: 0.2rem;
+    font-size: 0.8rem;
+    color: var(--global-text-color-light);
+  }
+  
+  .publication-tags-display .tag-label {
+    font-weight: 300;
+    margin-right: 0.2rem;
+  }
+  
+  .publication-tags-display .tag-item {
+    display: inline;
+    margin-right: 0.2rem;
+    font-weight: 300;
+  }
+  
+  .publication-tags-display .tag-item:not(:last-child):after {
+    content: ",";
+  }
 </style>
 
-Click the buttons below to view our work by category. Please see [Google Scholar](https://scholar.google.com/citations?hl=en&user=9D4aG8AAAAAJ&view_op=list_works&sortby=pubdate) for more recent works and arXiv papers.
+Click the tags below to view our work by category. Please see [Google Scholar](https://scholar.google.com/citations?hl=en&user=9D4aG8AAAAAJ&view_op=list_works&sortby=pubdate) for more recent works and arXiv papers.
 <!-- Custom Tag Filter Buttons -->
 <div class="publication-tags-container mb-4">
   <div class="tag-buttons">
@@ -42,6 +64,7 @@ Click the buttons below to view our work by category. Please see [Google Scholar
     <button class="tag-btn" data-tag="Simulation">Simulation</button>
     <button class="tag-btn" data-tag="Autonomy">Autonomy</button>
     <button class="tag-btn" data-tag="Generative Models">Generative Models</button>
+    <button class="tag-btn" data-tag="Reinforcement Learning">Reinforcement Learning</button>
     <button class="tag-btn" data-tag="Others">Others</button>
 
   </div>
@@ -57,6 +80,40 @@ Click the buttons below to view our work by category. Please see [Google Scholar
 document.addEventListener('DOMContentLoaded', function() {
   const tagButtons = document.querySelectorAll('.tag-btn');
   const publications = document.querySelectorAll('.publications ol.bibliography li');
+
+  // Add tags display to each publication
+  publications.forEach(publication => {
+    const publicationDiv = publication.querySelector('div[data-tags]');
+    if (publicationDiv) {
+      const tags = publicationDiv.getAttribute('data-tags') || '';
+      if (tags) {
+        // Find the links section (where PDF, website links are)
+        const linksSection = publication.querySelector('.links');
+        if (linksSection) {
+          // Create tags display element
+          const tagsDisplay = document.createElement('div');
+          tagsDisplay.className = 'publication-tags-display';
+          
+          const tagLabel = document.createElement('span');
+          tagLabel.className = 'tag-label';
+          tagLabel.textContent = 'Tag: ';
+          tagsDisplay.appendChild(tagLabel);
+          
+          // Split tags and create badge for each
+          const tagArray = tags.split(',').map(tag => tag.trim()).filter(tag => tag);
+          tagArray.forEach((tag, index) => {
+            const tagBadge = document.createElement('span');
+            tagBadge.className = 'tag-item';
+            tagBadge.textContent = tag;
+            tagsDisplay.appendChild(tagBadge);
+          });
+          
+          // Insert after the links section
+          linksSection.parentNode.insertBefore(tagsDisplay, linksSection.nextSibling);
+        }
+      }
+    }
+  });
 
   // Add "Before UCLA" badge only to year 2022
   const yearSections = document.querySelectorAll('.publications h2, .publications h3, .publications .year');

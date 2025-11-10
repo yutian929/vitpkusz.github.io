@@ -25,7 +25,7 @@ $ docker compose up
 * Update Publications: [_bibliography/papers.bib](_bibliography/papers.bib)
     *  Add the field `selected={true}` if Bolei wants it to appear in the selected publication list
     *  Use the field `tags={XXX}` to add your paper to the corresponding category
-    *  Existing categories are: `Computer Vision, Robotics, Simulation, Autonomy, Generative Models, Others`
+    *  Existing categories are: `Computer Vision, Robotics, Simulation, Autonomy, Generative Models, Reinforcement Learning, Others`
     * Use the field `teaser={XXXX}` to add your teaser image, upload your teaser image to [assets/teaser](assets/teaser)
 * Update teaser video: `highlighted_projects` in [_pages/main.md](_pages/main.md)
     * Upload your video to: [assets/video/](assets/video/)
