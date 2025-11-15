@@ -36,3 +36,6 @@ $ docker compose up
     * Use existing template for the `role` field
     * For all non-alumni members, the `affiliation` field should **always** be `UCLA`
     * Make sure to update your personal webpage link! If you don't have a personal webpage, then please use your LinkedIn address.
+
+* Update Awards: [_pages/awards.md](_pages/awards.md)
+    * Format: (Name, Link): (Award Title, Link), Year
