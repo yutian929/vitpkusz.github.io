@@ -36,8 +36,8 @@ highlighted_projects:
   - teaser_video: /assets/video/pedgen_demo.mp4
     teaser_img: 
     caption: 
-    title: "Learning to Generate Diverse Pedestrian Movements from Web Videos with Noisy Labels"
-    link: https://genforce.github.io/PedGen/
+    title: "Joint Optimization for 4D Human-Scene Reconstruction in the Wild"
+    link: https://genforce.github.io/JOSH/
   - teaser_video: /assets/video/ppl_demo.mp4
     teaser_img: 
     caption: 
