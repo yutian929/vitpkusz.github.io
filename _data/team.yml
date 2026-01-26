@@ -63,11 +63,6 @@
   affiliation: "UCLA"
 
 # Master and Undergraduate Students #
-- name: "Yuxin Liu"
-  role: "Master and Undergraduate Students"
-  image: "../assets/team/yuxinliu.jpeg"
-  link: "https://www.linkedin.com/in/yuxinclaire"
-  affiliation: "UCLA"
 
 - name: "Weizhen Wang"
   role: "Master and Undergraduate Students"
@@ -81,29 +76,72 @@
   link: "https://www.linkedin.com/in/matthew-leng-1820a2346"
   affiliation: "UCLA"
 
-- name: "Joe Lin"
-  role: "Master and Undergraduate Students"
-  image: "../assets/team/joelin.jpeg"
-  link: "https://www.linkedin.com/in/joe-lin-tech"
-  affiliation: "UCLA"
-
 - name: "Jack He"
   role: "Master and Undergraduate Students"
   image: "../assets/team/jackhe.jpg"
   link: "https://jackhe313.github.io/"
   affiliation: "UCLA"
 
-- name: "Ophir Siman-Tov"
+- name: "Junhua Huang"
   role: "Master and Undergraduate Students"
-  image: "../assets/team/ophir.jpeg"
-  link: "https://www.linkedin.com/in/ophir-siman-tov/"
+  image: "../assets/team/junhuahuang.jpg"
+  link: "https://harry-junhua-huang.github.io/"
   affiliation: "UCLA"
+
+- name: "Joe Lin"
+  role: "Master and Undergraduate Students"
+  image: "../assets/team/joelin.jpeg"
+  link: "https://www.linkedin.com/in/joe-lin-tech"
+  affiliation: "UCLA"
+
+- name: "Selina Song"
+  role: "Master and Undergraduate Students"
+  image: "../assets/team/selinasong.jpeg"
+  link: "https://www.linkedin.com/in/selinasong/"
+  affiliation: "UCLA"
+
+- name: "Leon Liu"
+  role: "Master and Undergraduate Students"
+  image: "../assets/team/leonliu.png"
+  link: "https://www.linkedin.com/in/leonliu360/"
+  affiliation: "UCLA"
+
+- name: "Vivek Alumootil"
+  role: "Master and Undergraduate Students"
+  image: "../assets/team/vivek.png"
+  link: "https://www.linkedin.com/in/vivekalumootil/"
+  affiliation: "UCLA"
+
+- name: "Jason Zhang"
+  role: "Master and Undergraduate Students"
+  image: "../assets/team/jasonzhang.jpeg"
+  link: "https://www.linkedin.com/in/jasonszhang/"
+  affiliation: "UCLA"
+
+- name: "Griffin Galimi"
+  role: "Master and Undergraduate Students"
+  image: "../assets/team/griffingalimi.jpeg"
+  link: "https://ggalimi.com/"
+  affiliation: "UCLA"
+
 
 # Visiting Students #
 - name: "Yukai Ma"
   role: "Visiting Students"
   image: "../assets/team/yukaima.jpeg"
   link: "https://yukai-ma.github.io/"
+  affiliation: "UCLA"
+
+- name: "Liu Liu"
+  role: "Visiting Students"
+  image: "../assets/team/liuliu.png"
+  link: "https://dusp.mit.edu/people/liu-liu"
+  affiliation: "UCLA"
+
+- name: "Haoxuan Wang"
+  role: "Visiting Students"
+  image: "../assets/team/haoxuanwang.jpg"
+  link: "https://hatchetproject.github.io/"
   affiliation: "UCLA"
 
 # Robot members #
@@ -128,6 +166,18 @@
 - name: "Robot Chair"
   role: "Robot Members"
   image: "../assets/team/robot_chair.jpg"
+  link: false
+  affiliation: "UCLA"
+
+- name: "Lynx M20 Pro"
+  role: "Robot Members"
+  image: "../assets/team/lynx.png"
+  link: false
+  affiliation: "UCLA"
+
+- name: "EarthRover Mini"
+  role: "Robot Members"
+  image: "../assets/team/earthrover_mini.png"
   link: false
   affiliation: "UCLA"
 
@@ -160,6 +210,19 @@
 
   
 # Alumni - Graduated Master's students #
+- name: "Yuxin Liu"
+  role: "Alumni - Graduated Master's Students"
+  link: "https://www.linkedin.com/in/yuxinclaire"
+  year: "2026"
+  affiliation: "Works at Woven by Toyota "
+
+
+- name: "Ophir Siman-Tov"
+  role: "Alumni - Graduated Master's Students"
+  link: "https://www.linkedin.com/in/ophir-siman-tov/"
+  year: "2026"
+  affiliation: "Works at Google"
+
 - name: "Pierce Chong"
   role: "Alumni - Graduated Master's Students"
   link: "https://www.linkedin.com/in/pierce-chong-0101/?originalSubdomain=sg"
