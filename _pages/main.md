@@ -8,16 +8,32 @@ description:
 carousel_autoplay_delay: 3500
 
 highlighted_projects:
-  - teaser_video: /assets/video/urbansim_demo.mp4
-    teaser_img: 
-    caption: 
-    title: "Towards Autonomous Micromobility through Scalable Urban Simulation"
-    link: https://metadriverse.github.io/urbansim/
+
   - teaser_video: /assets/video/urbanverse_demo.mp4
     teaser_img: 
     caption: 
     title: "UrbanVerse: Scaling Urban Simulation by Watching City-Tour Videos"
     link: https://urbanverseproject.github.io/
+  - teaser_video: /assets/video/s2e_demo.mp4
+    teaser_img: 
+    caption: 
+    title: "From Seeing to Experiencing: Scaling Navigation Foundation Models with Reinforcement Learning"
+    link: https://metadriverse.github.io/s2e/
+  - teaser_video: /assets/video/josh.mp4
+    teaser_img: 
+    caption: 
+    title: "Joint Optimization for 4D Human-Scene Reconstruction in the Wild"
+    link: https://genforce.github.io/JOSH/
+  - teaser_video: /assets/video/infgen.mp4
+    teaser_img: 
+    caption: 
+    title: "InfGen: Scenario Generation as Next-Token-Group Prediction"
+    link: https://metadriverse.github.io/infgen/ 
+  - teaser_video: /assets/video/urbansim_demo.mp4
+    teaser_img: 
+    caption: 
+    title: "Towards Autonomous Micromobility through Scalable Urban Simulation"
+    link: https://metadriverse.github.io/urbansim/
   - teaser_video: /assets/video/vid2sim_demo.mp4
     teaser_img: 
     caption: 
@@ -28,26 +44,10 @@ highlighted_projects:
     caption: 
     title: "Dreamland: Controllable World Creation with Simulator and Generative Models"
     link: https://metadriverse.github.io/dreamland/
-  - teaser_video: /assets/video/s2e_demo.mp4
-    teaser_img: 
-    caption: 
-    title: "From Seeing to Experiencing: Scaling Navigation Foundation Models with Reinforcement Learning"
-    link: https://metadriverse.github.io/s2e/
-  - teaser_video: /assets/video/pedgen_demo.mp4
-    teaser_img: 
-    caption: 
-    title: "Joint Optimization for 4D Human-Scene Reconstruction in the Wild"
-    link: https://genforce.github.io/JOSH/
   - teaser_video: /assets/video/ppl_demo.mp4
     teaser_img: 
     caption: 
     title: "Predictive Preference Learning from Human Interventions"
-    link: https://metadriverse.github.io/ppl/
-  - teaser_video: /assets/video/pvp4real_highlight_video.mp4
-    teaser_img: 
-    caption: 
-    title: "PVP4Real: Mobile robots learned from human-in-the-loop interventions"
-    link: https://metadriverse.github.io/pvp4real/
     
 ---
 
