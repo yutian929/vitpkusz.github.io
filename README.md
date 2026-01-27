@@ -19,9 +19,6 @@ $ docker compose up
     * For paper acceptance, please follow the format *AA, BB, and CC (with paper link) were accepted to XXXX*.
     * For workshop, please follow the format *We organized YYYYY workshop (with workshop link) at XXXXX*.
 
-
-
-
 * Update Publications: [_bibliography/papers.bib](_bibliography/papers.bib)
     *  Add the field `selected={true}` if Bolei wants it to appear in the selected publication list
     *  Use the field `tags={XXX}` to add your paper to the corresponding category
@@ -40,3 +37,7 @@ $ docker compose up
 
 * Update Awards: [_pages/awards.md](_pages/awards.md)
     * Format: (Name, Link): (Award Title, Link), Year
+
+* Update Project Webpages: [_pages](_pages)
+    * Example: JOSH webpage (_pages/JOSH.md), the Project URL will be https://vail-ucla.github.io/JOSH/.
+    * Put all project-related assets under [assets/projects](assets/projects) for better organization. 
