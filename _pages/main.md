@@ -23,7 +23,7 @@ highlighted_projects:
     teaser_img: 
     caption: 
     title: "Joint Optimization for 4D Human-Scene Reconstruction in the Wild"
-    link: https://genforce.github.io/JOSH/
+    link: https://vail-ucla.github.io/JOSH/
   - teaser_video: /assets/video/infgen.mp4
     teaser_img: 
     caption: 
