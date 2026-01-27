@@ -1,8 +1,10 @@
 ---
 layout: research
 permalink: /JOSH/
-title: "Joint Optimization for 4D Human-Scene Reconstruction in the Wild"
+title: "JOSH"
 page_title: "Joint Optimization for 4D Human-Scene Reconstruction in the Wild"
+description: "<h3>ICLR 2026</h3>"
+
 authors:
 
 - {name: "Zhizheng Liu", url: "https://scholar.google.com/citations?user=Asc7j9oAAAAJ&hl=en"}
