@@ -46,6 +46,8 @@
   --global-danger-block-bg: #ffe0e0;
   --global-danger-block-text: #600;
   --global-danger-block-title: #c00;
+  --global-research-section-border: rgba(0, 0, 0, 0.04);
+
 
   #light-toggle-system {
     padding-left: 10px;
@@ -120,6 +122,9 @@ html[data-theme="dark"] {
   --global-danger-block-bg: #ffe0e0;
   --global-danger-block-text: #600;
   --global-danger-block-title: #c00;
+
+  --global-research-section-border: rgba(255, 255, 255, 0.2);
+
 
   .only-light {
     display: none;

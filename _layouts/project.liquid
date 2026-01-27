@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="{{ site.lang }}">
+  <!-- Head -->
+  <head>
+    {% if page.redirect %}
+      {% if page.redirect == true %}
+        {% assign redirect = site.baseurl | append: '/' %}
+      {% elsif page.redirect contains '://' %}
+        {% assign redirect = page.redirect %}
+      {% else %}
+        {% assign redirect = page.redirect | relative_url %}
+      {% endif %}
+      <meta http-equiv="refresh" content="3; url={{ redirect }}">
+    {% endif %}
+    {% include head.liquid %}
+    
+  <style>
+      /* Center section titles (h2) */
+      .container h2 {
+        text-align: center;
+        margin-top: 2rem;
+        margin-bottom: 1.5rem;
+        color: #000 !important;
+      }
+      
+      /* Adjust subsection (h3) font */
+      .container h3 {
+        text-align: center;
+        font-size: 1.2rem;
+        font-weight: 700 !important;
+        margin-top: 1.5rem;
+        margin-bottom: 1rem;
+        color: #000 !important;
+      }
+      
+      /* Adjust h1 font */
+      .container h1 {
+        font-weight: 700 !important;
+        color: #000 !important;
+      }
+      
+      /* Adjust h4 font */
+      .container h4 {
+        font-weight: 700 !important;
+        color: #000 !important;
+      }
+      
+      /* Adjust code block background */
+      .container pre {
+        background-color: #f5f5f5 !important;
+        border: 1px solid #e0e0e0;
+        border-radius: 0.5rem;
+        padding: 1rem;
+      }
+      
+      /* Dark mode code block background */
+      html[data-theme='dark'] .container pre {
+        background-color: #2d2d2d !important;
+        border-color: #444;
+      }
+    </style>
+  </head>
+
+  <!-- Body -->
+  <body class="{% if site.navbar_fixed %}fixed-top-nav{% endif %} {% unless site.footer_fixed %}sticky-bottom-footer{% endunless %}">
+    <!-- Header -->
+    {% include header_project.liquid %}
+
+    <!-- Content -->
+    <div class="container {% if page.permalink == '/' %}mt-n2{% else %}mt-5{% endif %}" role="main">
+      {% if page.toc and page.toc.sidebar %}
+        {% if page.toc.sidebar == 'right' %}
+          <div class="row">
+            <!-- main content area -->
+            <div class="col-sm-9">{{ content }}</div>
+            <!-- sidebar, which will move to the top on a small screen -->
+            <div class="col-sm-3">
+              <nav id="toc-sidebar" class="sticky-top"></nav>
+            </div>
+          </div>
+        {% else %}
+          <div class="row">
+            <!-- sidebar, which will move to the top on a small screen -->
+            <div class="col-sm-3">
+              <nav id="toc-sidebar" class="sticky-top"></nav>
+            </div>
+            <!-- main content area -->
+            <div class="col-sm-9">{{ content }}</div>
+          </div>
+        {% endif %}
+      {% else %}
+        {{ content }}
+      {% endif %}
+    </div>
+
+    <!-- Footer -->
+    {% include footer.liquid %}
+
+    <!-- JavaScripts -->
+    {% include scripts.liquid %}
+  </body>
+</html>

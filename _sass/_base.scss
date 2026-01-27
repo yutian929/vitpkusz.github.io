@@ -1612,3 +1612,57 @@ figure.cover {
   list-style: none;
   padding: 0;
 }
+
+.center-text {
+  text-align: center;
+}
+
+.my-image {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Citation */
+.citation {
+  min-height: 60pt;
+  margin: 10pt 0;
+}
+.citation .image {
+  width: 120pt;
+  float: left;
+}
+.citation .image img {
+  width: 120pt;
+  object-fit: cover;
+}
+.citation .comment{
+  margin-left: 130pt;
+  text-align: left;
+  font-size: 14pt;
+}
+
+.research-section {
+  max-width: 800pt;
+  margin: auto;
+  box-shadow: 20px 10px 20px var(--global-research-section-border);
+  border-radius: 0;
+  padding: 30px 30px 10px 30px;
+  border-width: 0.5px;
+  border-style: solid;
+  border-color: var(--global-research-section-border);
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+.research-section ul {
+  list-style-position: outside;
+  padding-left: 30px;
+}
+
+.research-section ol {
+  padding-left: 30px;
+}
+
+.research-section li {
+  padding-left: -20px;
+}
