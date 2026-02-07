@@ -79,11 +79,10 @@ JOSH surpasses existing methods on both global human motion estimation and metri
 
 ## Interactive Demo on Web Video
 
-<iframe width="100%" height="650" style="border:none" src="https://app.rerun.io/version/0.20.3/?url=https://raw.githubusercontent.com/genforce/JOSH/main/recordings/demo_1.rrd"></iframe>
+<iframe width="100%" height="650" style="border:none" src="https://app.rerun.io/version/0.20.3/?url=https://raw.githubusercontent.com/genforce/JOSH/main/recordings/demo_1.rrd&renderer=webgl"></iframe>
 
 <!--research-section-splitter-->
-
-## Prior Works
+## Relevant Work
 
 
  <div class="citation">
