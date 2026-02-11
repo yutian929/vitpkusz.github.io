@@ -268,7 +268,7 @@ The workshop will take place on **TBD**, at **TBD**.
 <table class="schedule-table">
   <thead>
     <tr>
-      <th>Time (PST)</th>
+      <th>Time</th>
       <th>Event</th>
     </tr>
   </thead>
