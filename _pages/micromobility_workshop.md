@@ -207,9 +207,9 @@ html[data-theme='dark'] .col-md-5 {
     <img src="/assets/img/micromobility_workshop/teaser.png" class="my-image" alt="Image" style="width: 100%;" />
   </div>
   <div class="col-md-7">
-    With the rapid development of Embodied AI technologies, a wide variety of mobile robots are starting to share the streets and sidewalks with pedestrians. Despite their potential, sidewalks present a much more complex and unpredictable environment for mobility than typical roads and streets. Broken curbs, uneven pavements, and narrow streets often make the terrain challenging for passage, while crowds of dense pedestrians make safe and efficient mobility even more difficult.
+    With the rapid development of Embodied AI technologies, a wide variety of mobile robots are starting to share the streets and sidewalks with pedestrians. While researchers have made significant progress in mobility, especially in autonomous driving, micromobility remains comparatively under-studied. Despite their potential, sidewalks present a much more complex and unpredictable environment for mobility than typical roads and streets. Broken curbs, uneven pavements, and narrow streets often make the terrain challenging for passage, while crowds of dense pedestrians make safe and efficient mobility even more difficult.
     <br><br>
-    <b>Workshop on Foundation Models for Micromobility</b> aims to bring together the growing community of researchers and practitioners at the intersection of computer vision, robotics, simulation, and machine learning, with a particular focus on how foundation models can enable robust, generalizable, and scalable sidewalk autonomy. The workshop will serve as a forum to discuss the latest advances, open problems, emerging datasets and benchmarks related to sidewalk autonomy. We expect participation from sub-communities including: (i) foundation models, (ii) robot learning, (iii) computer vision, (iv) navigation, and (v) simulation.
+    <b>Workshop on Foundation Models for Micromobility</b> aims to bring together the growing community of researchers and practitioners at the intersection of computer vision, robotics, simulation, and machine learning, with a particular focus on how foundation models can enable robust, generalizable, and scalable sidewalk micromobility. The workshop will serve as a forum to discuss the latest advances, open problems, emerging datasets and benchmarks related to sidewalk micromobility. We expect participation from sub-communities including: (i) foundation models, (ii) robot learning, (iii) computer vision, (iv) navigation, and (v) simulation.
   </div>
 </div>
 ---
@@ -291,7 +291,7 @@ The workshop will take place on **TBD**, at **TBD**.
     </tr>
     <tr>
       <td class="time-col">10:25 am – 10:55 am</td>
-      <td>Sidewalk Autonomy Navigation Challenge Session</td>
+      <td>Sidewalk Micromobility Navigation Challenge Session</td>
     </tr>
     <tr>
       <td class="time-col">10:55 am – 11:30 am</td>
