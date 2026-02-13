@@ -430,7 +430,7 @@ The workshop will take place on **TBD**, at **TBD**.
                 </ul>
             </div>
             <div class="caption">
-                Bolei Zhou<br><span>University of California, Berkeley</span>
+                Bolei Zhou<br><span>University of California, Los Angeles</span>
             </div>
         </div>
     </div>
