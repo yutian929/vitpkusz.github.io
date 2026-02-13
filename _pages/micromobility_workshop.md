@@ -279,7 +279,7 @@ The workshop will take place on **TBD**, at **TBD**.
     </tr>
     <tr>
       <td class="time-col">09:00 am – 09:35 am</td>
-      <td>Keynote Talk 1 — Dinesh Manocha (TBD)</td>
+      <td>Keynote Talk 1 — Dinesh Manocha (Confirmed)</td>
     </tr>
     <tr>
       <td class="time-col">09:35 am – 09:55 am</td>
@@ -295,7 +295,7 @@ The workshop will take place on **TBD**, at **TBD**.
     </tr>
     <tr>
       <td class="time-col">10:55 am – 11:30 am</td>
-      <td>Keynote Talk 2 — Joydeep Biswas (TBD)</td>
+      <td>Keynote Talk 2 — Joydeep Biswas (Confirmed)</td>
     </tr>
     <tr>
       <td class="time-col">11:30 am – 11:50 am</td>
