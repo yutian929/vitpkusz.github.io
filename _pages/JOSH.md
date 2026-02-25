@@ -26,7 +26,7 @@ pdf_link: https://arxiv.org/abs/2501.02158
 
 
 <div class="embed-responsive embed-responsive-16by9">
-  <video muted autoplay playsinline controls loop style="position: absolute; top: 0%; left: 0%; width: 100%; height: 100%;">
+  <video muted autoplay playsinline controls loop preload="metadata" style="position: absolute; top: 0%; left: 0%; width: 100%; height: 100%;">
         <source src="../assets/projects/josh/demo.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
@@ -55,7 +55,7 @@ JOSH surpasses existing methods on both global human motion estimation and metri
 
 ### Evaluation on Global Human Motion Estimation with the EMDB Dataset
 <div class="embed-responsive embed-responsive-16by9">
-  <video muted autoplay playsinline controls loop style="position: absolute; top: 0%; left: 0%; width: 100%; height: 100%;">
+  <video muted autoplay playsinline controls loop preload="metadata" style="position: absolute; top: 0%; left: 0%; width: 100%; height: 100%;">
         <source src="../assets/projects/josh/dataset_1.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
@@ -63,7 +63,7 @@ JOSH surpasses existing methods on both global human motion estimation and metri
 
 ###  Evaluation on Global Camera Trajectory Estimation with the SLOPER4D Dataset
 <div class="embed-responsive embed-responsive-16by9">
-  <video muted autoplay playsinline controls loop style="position: absolute; top: 0%; left: 0%; width: 100%; height: 100%;">
+  <video muted autoplay playsinline controls loop preload="metadata" style="position: absolute; top: 0%; left: 0%; width: 100%; height: 100%;">
         <source src="../assets/projects/josh/dataset_2.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
