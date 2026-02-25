@@ -18,7 +18,7 @@ highlighted_projects:
     teaser_img: 
     caption: 
     title: "From Seeing to Experiencing: Scaling Navigation Foundation Models with Reinforcement Learning"
-    link: https://metadriverse.github.io/s2e/
+    link: https://vail-ucla.github.io/S2E/
   - teaser_video: /assets/video/josh.mp4
     teaser_img: 
     caption: 
