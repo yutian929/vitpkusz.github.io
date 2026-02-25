@@ -28,6 +28,7 @@ $ docker compose up
 * Update teaser video: `highlighted_projects` in [_pages/main.md](_pages/main.md)
     * Upload your video to: [assets/video/](assets/video/)
     * For teaser video, make sure the length is **5 seconds tight** 
+    * use **.mp4** format for better compatibility
 
 * Update Team Members: [_data/team.yml](_data/team.yml)
     * Team member photo folder: [assets/team/](assets/team/)
@@ -41,3 +42,4 @@ $ docker compose up
 * Update Project Webpages: [_pages](_pages)
     * Example: JOSH webpage (_pages/JOSH.md), the Project URL will be https://vail-ucla.github.io/JOSH/.
     * Put all project-related assets under [assets/projects](assets/projects) for better organization. 
+    * use **.mp4** format for better compatibility for all videos
