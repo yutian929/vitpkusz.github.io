@@ -24,11 +24,11 @@ highlighted_projects:
     caption: 
     title: "Joint Optimization for 4D Human-Scene Reconstruction in the Wild"
     link: https://vail-ucla.github.io/JOSH/
-  - teaser_video: /assets/video/infgen.mp4
+  - teaser_video: /assets/video/SceneStreamer_video.mp4
     teaser_img: 
     caption: 
-    title: "InfGen: Scenario Generation as Next-Token-Group Prediction"
-    link: https://metadriverse.github.io/infgen/ 
+    title: "SceneStreamer: Continuous Scenario Generation as Next Token Group Prediction"
+    link: https://vail-ucla.github.io/scenestreamer/ 
   - teaser_video: /assets/video/urbansim_demo.mp4
     teaser_img: 
     caption: 
