@@ -289,7 +289,7 @@
           >
         {% endif %}
       {% endif %}
-      {% if entry.website %}
+      {% if entry.website != blank %}
         <a href="{{ entry.website }}" class="btn btn-sm z-depth-0" role="button">Website</a>
       {% endif %}
     </div>
