@@ -20,8 +20,8 @@ institutions:
 
 nav: false
 nav_order: 1
-code_link: 
-pdf_link: 
+code_link: https://github.com/VAIL-UCLA/MIMIC
+pdf_link: ../assets/projects/mimic/paper.pdf
 
 ---
 
@@ -31,14 +31,16 @@ pdf_link:
         Your browser does not support the video tag.
     </video>
 </div>
+<div style="text-align:center;font-size:14px;color:#444;margin-top:4px;margin-bottom:12px;">We train a sidewalk autopilot that navigates autonomously with obstacle avoidance, sidewalk lane following, and pedestrian awareness.</div>
 
 <div class="research-section">
     <h3 style="text-align: center">TL;DR</h3>
     <ul style="list-style-type: none; padding-left: 0;">
-      <strong>MIMIC</strong> (Multi-scale IMItation with Corrective expansions) is an imitation learning framework for training a sidewalk autopilot from teleoperation data.<br><br>
-    1. We propose <strong>corrective behavior expansion</strong> that synthesizes deviation-recovery trajectories from existing teleoperation data, enabling the policy to learn to recover from its own mistakes.<br>
-    2. We introduce a <strong>multi-scale imitation learning</strong> architecture with horizon-specific anchors that jointly captures short-horizon interactive behaviors and long-horizon goal-directed intentions.<br>
-    3. We demonstrate improvements in real-world closed-loop deployment on diverse sidewalk scenarios.
+      <strong>MIMIC</strong> (Multi-scale IMItation with Corrective expansions) is an imitation learning framework for training a sidewalk autopilot from teleoperation data. We focus on augmenting training data at both the behavior level and visual diversity through <strong>corrective behavior expansion</strong> and <strong>generative data augmentation</strong>.<br><br>
+    1. We introduce a <strong>multi-scale imitation learning</strong> architecture with horizon-specific anchors that jointly captures short-horizon interactive behaviors and long-horizon goal-directed intentions.<br>
+    2. We propose <strong>corrective behavior expansion</strong> that synthesizes deviation-recovery trajectories from existing teleoperation data, enabling the policy to learn to recover from its own mistakes.<br>
+    3. We adopt <strong>generative data augmentation</strong> to enrich visual diversity while preserving scene geometry, improving robustness to varied lighting and weather conditions.<br>
+    4. We demonstrate improvements in real-world closed-loop deployment on diverse sidewalk scenarios.
   </ul>
 </div>
 
@@ -50,13 +52,15 @@ pdf_link:
     <img src="../assets/projects/mimic/mimic_model.png" class="my-image" alt="Image" />
 </div>
 
-MIMIC adopts an encoder-decoder architecture that processes RGB observations, and goal signals — into a compact spatiotemporal representation. The action decoder leverages time-horizon-specific anchors to produce actions parameterized by GMMs across multiple horizons, enabling the model to learn both fine-grained reactivity and long-term planning in a unified framework.
+MIMIC adopts an encoder-decoder architecture that processes RGB observations, and goal signals into a spatiotemporal representation. The action decoder leverages time-horizon-specific anchors to produce actions parameterized by GMMs across multiple horizons, enabling the model to learn both fine-grained reactivity and long-term planning in a unified framework.
 
 <!--research-section-splitter-->
 
 ## Corrective Behavior Expansion
 
-We synthesize failure-correction scenarios by deliberately generating trajectories in which the robot deviates from the intended route, and then provide corrective actions as supervision. Given a 3D point cloud reconstructed from the video sequence, we perturb the trajectory using a deviation-recovery noise sequence and re-render novel observations, pairing each perturbed trajectory with a corrective recovery maneuver.
+We synthesize failure-correction scenarios by deliberately generating trajectories in which the robot deviates from the intended route, and then provide corrective actions as supervision. 
+
+Based on <a href="https://github.com/TrajectoryCrafter/TrajectoryCrafter">TrajectoryCrafter</a>, we perturb the trajectory using a deviation-recovery noise sequence, and re-render novel observations, pairing each perturbed trajectory with a corrective recovery maneuver.
 
 <!-- 4 rows: ori / dev / ori / dev, label column + 3 scenario columns -->
 <!-- Row 1-2 small gap (same scenario pair), 2-3 medium gap, 3-4 small gap -->
@@ -105,7 +109,7 @@ We synthesize failure-correction scenarios by deliberately generating trajectori
   <div style="writing-mode: vertical-rl; transform: rotate(180deg); font-size: 13px; font-weight: 600; color: #444; text-align: center; padding: 0 4px;">Original</div>
   <div class="embed-responsive embed-responsive-16by9">
     <video muted autoplay playsinline loop style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
-      <source src="../assets/projects/mimic/gen_video_6_ori.mp4" type="video/mp4">
+      <source src="../assets/projects/mimic/gen_video_5_ori.mp4" type="video/mp4">
     </video>
   </div>
   <div class="embed-responsive embed-responsive-16by9">
@@ -115,7 +119,7 @@ We synthesize failure-correction scenarios by deliberately generating trajectori
   </div>
   <div class="embed-responsive embed-responsive-16by9">
     <video muted autoplay playsinline loop style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
-      <source src="../assets/projects/mimic/gen_video_5_ori.mp4" type="video/mp4">
+      <source src="../assets/projects/mimic/gen_video_6_ori.mp4" type="video/mp4">
     </video>
   </div>
 
@@ -123,7 +127,7 @@ We synthesize failure-correction scenarios by deliberately generating trajectori
   <div style="writing-mode: vertical-rl; transform: rotate(180deg); font-size: 13px; font-weight: 600; text-align: center; padding: 0 4px;"><span style="color: #c44;">Deviation</span>-<span style="color: #2a2;">Recovery</span></div>
   <div class="embed-responsive embed-responsive-16by9">
     <video muted autoplay playsinline loop style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
-      <source src="../assets/projects/mimic/gen_video_6_dev.mp4" type="video/mp4">
+      <source src="../assets/projects/mimic/gen_video_5_dev.mp4" type="video/mp4">
     </video>
   </div>
   <div class="embed-responsive embed-responsive-16by9">
@@ -133,7 +137,7 @@ We synthesize failure-correction scenarios by deliberately generating trajectori
   </div>
   <div class="embed-responsive embed-responsive-16by9">
     <video muted autoplay playsinline loop style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
-      <source src="../assets/projects/mimic/gen_video_5_dev.mp4" type="video/mp4">
+      <source src="../assets/projects/mimic/gen_video_6_dev.mp4" type="video/mp4">
     </video>
   </div>
 
@@ -141,7 +145,7 @@ We synthesize failure-correction scenarios by deliberately generating trajectori
 
 <!--research-section-splitter-->
 
-## Sensor Augmentation
+## Generative Data Augmentation
 
 <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 8px; margin-top: 16px; margin-bottom: 16px;">
   <div>
@@ -155,7 +159,9 @@ We synthesize failure-correction scenarios by deliberately generating trajectori
   </div>
 </div>
 
-We adopt a fore-background relighting model to enrich visual diversity while preserving scene geometry. The model disentangles foreground objects from the background, and applies prompt-based relighting with different strength coefficients to synthesize novel lighting conditions.
+We adopt a fore-background relighting model to enrich visual diversity while preserving scene geometry. 
+
+Based on <a href="https://github.com/bcmi/Light-A-Video">Light-A-Video</a>, we disentangle foreground objects from the background, and apply prompt-based relighting with different strength coefficients to synthesize novel lighting conditions.
 
 
 <table style="width: 100%; border-collapse: collapse; margin-top: 16px; table-layout: fixed;">
@@ -186,24 +192,32 @@ We adopt a fore-background relighting model to enrich visual diversity while pre
 
 ## Real-World Deployment
 
-We have successfully deployed the learned policies in real-world sidewalk environments.
+We evaluate the learned autopilot policy on a wheeled delivery robot developed by <a href="https://www.cocodelivery.com/">Coco Robotics</a>. It uses a front monocular RGB camera as its sole perception input for sidewalk navigation. The policy runs in real time, producing trajectory to generate steering and velocity commands from images and GPS without any HD maps or LiDAR.
 
 <div style="margin-top: 16px;">
   <div class="embed-responsive embed-responsive-16by9">
     <video muted autoplay playsinline loop style="position:absolute;top:0;left:0;width:100%;height:100%;"><source src="../assets/projects/mimic/real_sidewalklane.mp4" type="video/mp4"></video>
   </div>
-  <div style="text-align:center;font-size:16px;color:#444;margin-top:4px;margin-bottom:12px;">Sidewalk Lane Following</div>
+  <div style="text-align:center;font-size:16px;color:#444;margin-top:4px;margin-bottom:12px;"><b>Sidewalk Lane Following</b> — The robot stays centered within the sidewalk lane, handling narrow paths.</div>
 
   <div class="embed-responsive embed-responsive-16by9">
     <video muted autoplay playsinline loop style="position:absolute;top:0;left:0;width:100%;height:100%;"><source src="../assets/projects/mimic/real_02.mp4" type="video/mp4"></video>
   </div>
-  <div style="text-align:center;font-size:16px;color:#444;margin-top:4px;margin-bottom:12px;">Pedestrian Awareness</div>
+  <div style="text-align:center;font-size:16px;color:#444;margin-top:4px;margin-bottom:12px;"><b>Pedestrian Awareness</b> — The robot yields to oncoming pedestrians, adjusting its trajectory to maintain safe clearance.</div>
 
   <div class="embed-responsive embed-responsive-16by9">
     <video muted autoplay playsinline loop style="position:absolute;top:0;left:0;width:100%;height:100%;"><source src="../assets/projects/mimic/real_03.mp4" type="video/mp4"></video>
   </div>
-  <div style="text-align:center;font-size:16px;color:#444;margin-top:4px;">Complex Real-World Scenario</div>
+  <div style="text-align:center;font-size:16px;color:#444;margin-top:4px;"><b>Complex Real-World Scenario</b> — The robot navigates a cluttered sidewalk with mixed obstacles.</div>
 </div>
+
+<!--research-section-splitter-->
+
+## Acknowledgement
+
+We build our pipelines upon <a href="https://github.com/TrajectoryCrafter/TrajectoryCrafter">TrajectoryCrafter</a> for novel-view trajectory synthesis and <a href="https://github.com/bcmi/Light-A-Video">Light-A-Video</a> for video relighting. We thank the authors for open-sourcing their work. 
+
+We thank <a href="https://www.cocodelivery.com/">Coco Robotics</a> for providing the robot platform and teleoperation data used in this work.
 
 <!--research-section-splitter-->
 
