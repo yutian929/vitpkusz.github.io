@@ -1644,14 +1644,14 @@ figure.cover {
 .research-section {
   max-width: 800pt;
   margin: auto;
-  box-shadow: 20px 10px 20px var(--global-research-section-border);
+  box-shadow: 5px 5px 5px var(--global-research-section-border);
   border-radius: 0;
-  padding: 30px 30px 10px 30px;
+  padding: 10px 20px 10px 20px;
   border-width: 0.5px;
   border-style: solid;
   border-color: var(--global-research-section-border);
-  margin-top: 2rem;
-  margin-bottom: 3rem;
+  margin-top: 0.35rem;
+  margin-bottom: 0.65rem;
 }
 
 .research-section ul {
