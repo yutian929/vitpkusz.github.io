@@ -31,7 +31,7 @@ pdf_link: ../assets/projects/mimic/paper.pdf
         Your browser does not support the video tag.
     </video>
 </div>
-<div style="text-align:center;font-size:14px;color:#444;margin-top:4px;margin-bottom:12px;">We train a sidewalk autopilot that navigates autonomously with obstacle avoidance, sidewalk lane following, and pedestrian awareness.</div>
+<div style="text-align:center;font-size:14px;color:#444;margin-top:4px;margin-bottom:12px;">We propose a method for training a sidewalk autopilot model that enables mobile robots to navigate autonomously with obstacle avoidance, lane following, and pedestrian awareness. The hardware platform is developed by <a href="https://www.cocodelivery.com/">Coco Robotics</a>.</div>
 
 <div class="research-section">
     <h3 style="text-align: center">TL;DR</h3>
