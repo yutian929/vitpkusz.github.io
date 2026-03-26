@@ -101,11 +101,46 @@ The root causes of the OL-CL deployment gap are decomposed into two key factors:
 $$\Delta_{\mathrm{obs}}(\theta, \phi) \triangleq J(\pi^{\mathrm{source}}_{\theta,\phi}) - J(\pi^{\mathrm{target}}_{\theta,\phi})$$
 </div>
 
+<div class="img-container" style="width: 100%; margin: auto auto;">
+    <img src="../assets/projects/bridgesim/3.2_empirical.png" class="my-image" alt="Image" />
+</div>
+
 - **Objective Mismatch** occurs when OL policies, which is optimized against OL proxy reward during the training time, encounters the CL objective that the learned Q-function gives deviated estimates of true state-action values.
 
 <div>
 $$\Delta_{\mathrm{obj}}(\theta) \triangleq J_{k=1}(\bar{\pi}_{\theta, \phi_{\mathrm{CL}}}) - J_{k=H}(\bar{\pi}_{\theta, \phi_{\mathrm{OL}}})$$
 </div>
+
+<div class="img-container" style="width: 100%; margin: auto auto;">
+    <img src="../assets/projects/bridgesim/3.3_empirical.png" class="my-image" alt="Image" />
+</div>
+
+<!--research-section-splitter-->
+
+
+## Test-time Adaptation (TTA) Framework
+
+We propose a test-time adaptation (TTA) framework to improve closed-loop robustness of pretrained E2E policies without retraining, consisting of an **Observational Calibrator** and a **Test-time Policy Adaptation** procedure.
+
+### Observational Calibrator
+
+Source and target domains induce different latent distributions due to domain-dependent sensing, causing the pretrained policy to receive out-of-distribution representations. We use flow matching to learn a transport map that aligns the source latent distribution to the target, mapping source observations into representations compatible with the downstream policy and effectively recovering open-loop performance.
+
+### Test-time Policy Adaptation
+
+#### Unbiased Q-value Estimation
+
+Standard Q-value estimation accumulates rewards infinitely, making it intractable under an open-loop model beyond the planning horizon $H$. We introduce a truncated action-value estimator that explicitly cancels the infinite tail:
+
+<div>
+$$\hat{Q}^{\pi}(s_t, \mathbf{a}_t) \triangleq R_k(s_t, \mathbf{a}_t) + \gamma^k \mathbb{E} \left[ V^\pi(s_{t+k}) \right] - \gamma^H \mathbb{E} \left[ V^\pi(s_{t+H}) \right]$$
+</div>
+
+At each step, the agent selects the candidate trajectory maximizing $\hat{Q}^{\pi}$, dynamically filtering out plans suffering from biased open-loop estimation.
+
+#### Adaptive Replan
+
+Standard test-time scorers operate memorylessly, selecting from the current candidate set at every step and causing action chattering. Instead, we carry forward the unexecuted remainder of the previous plan and retain it unless a new candidate yields a strictly higher estimated return, promoting temporal consistency and reducing unnecessary replanning across consecutive decision steps.
 
 <!--research-section-splitter-->
 
