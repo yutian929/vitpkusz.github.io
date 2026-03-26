@@ -49,12 +49,9 @@ code_link: https://github.com/VAIL-UCLA/BridgeSim
 }
 </style>
 
-
-
-
-<!-- <div class="img-container" style="width: 80%; margin: auto auto;">
-    <img src="../assets/projects/scenestreamer/teaser.png" class="my-image" alt="Image" />
-</div> -->
+<div class="img-container" style="width: 80%; margin: auto auto;">
+    <img src="../assets/projects/bridgesim/bridgesim.pdf" class="my-image" alt="Image" />
+</div>
 
 
 **BridgeSim** is a unified cross-simulator platform designed to evaluate OL pretrained E2E driving policies within high-fidelity CL environments in the MetaDrive simulator. BridgeSim designs a  Furthermore, BridgeSim offers a flexible deployment setting to simulate open-loop policy with varying execution frequencies and simulation horizons, providing the functional depth necessary for systematic and rigorous diagnosis of OL-CL gap. Consequently, BridgeSim bridges the critical divide between open-loop benchmarks limited to short-term static prediction and existing closed-loop frameworks that often lack the comprehensive functionality and annotations required for complex, reactive stress-testing.
@@ -91,23 +88,23 @@ End-to-end autonomous driving has seen rapid progress on non-reactive simulation
 
 We define E2E policy as: 
 
-$$
-\bar{\pi}^{d}_{\theta,\phi}(a,z,o \mid s) \triangleq \pi_{\phi}(a\mid z)\,P_\theta(z\mid o)\,\Omega^d(o\mid s)
-$$
+<div>
+$$\bar{\pi}^{d}_{\theta,\phi}(a,z,o \mid s) \triangleq \pi_{\phi}(a\mid z)\,P_\theta(z\mid o)\,\Omega^d(o\mid s)$$
+</div>
 
 The root causes of the OL-CL deployment gap are decomposed into two key factors:
 
 - **Information Asymmetry** occurs when there exists an observational domain shift and the source policy receives collapsed partially observable states in the target simulator.
 
-$$
-\Delta_{\mathrm{obs}}(\theta, \phi) \triangleq J(\pi^{\mathrm{source}}_{\theta,\phi}) - J(\pi^{\mathrm{target}}_{\theta,\phi})
-$$
+<div>
+$$\Delta_{\mathrm{obs}}(\theta, \phi) \triangleq J(\pi^{\mathrm{source}}_{\theta,\phi}) - J(\pi^{\mathrm{target}}_{\theta,\phi})$$
+</div>
 
 - **Objective Mismatch** occurs when OL policies, which is optimized against OL proxy reward during the training time, encounters the CL objective that the learned Q-function gives deviated estimates of true state-action values.
 
-$$
-\Delta_{\mathrm{obj}}(\theta) \triangleq J_{k=1}(\bar{\pi}_{\theta, \phi_{\mathrm{CL}}}) - J_{k=H}(\bar{\pi}_{\theta, \phi_{\mathrm{OL}}})
-$$
+<div>
+$$\Delta_{\mathrm{obj}}(\theta) \triangleq J_{k=1}(\bar{\pi}_{\theta, \phi_{\mathrm{CL}}}) - J_{k=H}(\bar{\pi}_{\theta, \phi_{\mathrm{OL}}})$$
+</div>
 
 <!--research-section-splitter-->
 
