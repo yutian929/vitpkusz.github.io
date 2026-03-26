@@ -49,8 +49,9 @@ code_link: https://github.com/VAIL-UCLA/BridgeSim
 }
 </style>
 
+
 <div class="img-container" style="width: 80%; margin: auto auto;">
-    <img src="../assets/projects/bridgesim/bridgesim.pdf" class="my-image" alt="Image" />
+    <img src="../assets/projects/bridgesim/bridgesim.png" class="my-image" alt="Image" />
 </div>
 
 
