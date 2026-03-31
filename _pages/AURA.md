@@ -75,7 +75,7 @@ S2E pipeline consists of two key components:<br>
 
 <div class="img-container" style="width: 100%; margin: 0 auto;">
   <video id="aura-draft-player" muted autoplay playsinline controls style="width: 100%; height: auto;">
-    <source src="../assets/projects/aura/draft_1_crop.mp4" type="video/mp4">
+    <source src="../assets/projects/aura/draft_1.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
 </div>
@@ -94,15 +94,15 @@ S2E pipeline consists of two key components:<br>
   (function() {
     const videos = [
       {
-        src: "../assets/projects/aura/draft_1_crop.mp4",
+        src: "../assets/projects/aura/draft_1.mp4",
         caption: "<strong>Draft 1.</strong> The robot transitions from the crosswalk to the sidewalk while navigating around a lamp post."
       },
       {
-        src: "../assets/projects/aura/draft_2_crop.mp4",
+        src: "../assets/projects/aura/draft_2.mp4",
         caption: "<strong>Draft 2.</strong> The robot makes a slight right turn to avoid a tree along the sidewalk."
       },
       {
-        src: "../assets/projects/aura/draft_3_crop.mp4",
+        src: "../assets/projects/aura/draft_3.mp4",
         caption: "<strong>Draft 3.</strong> The robot traverses a crowded area with parked cars."
       }
     ];
@@ -143,7 +143,7 @@ S2E pipeline consists of two key components:<br>
 
 <div class="img-container" style="width: 100%; margin: 0 auto;">
   <video id="aura-steer-player" muted autoplay playsinline controls style="width: 100%; height: auto;">
-    <source src="../assets/projects/aura/steer_1_crop.mp4" type="video/mp4">
+    <source src="../assets/projects/aura/steer_1.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
 </div>
@@ -162,15 +162,15 @@ S2E pipeline consists of two key components:<br>
   (function() {
     const videos = [
       {
-        src: "../assets/projects/aura/steer_1_crop.mp4",
+        src: "../assets/projects/aura/steer_1.mp4",
         caption: "<strong>Arrowing 1.</strong> The robot makes a slight left adjustment to avoid colliding with the roadside planter."
       },
       {
-        src: "../assets/projects/aura/steer_2_crop.mp4",
+        src: "../assets/projects/aura/steer_2.mp4",
         caption: "<strong>Arrowing 2.</strong> The robot turns slightly left to avoid thin pillars that are difficult to perceive."
       },
       {
-        src: "../assets/projects/aura/steer_3_crop.mp4",
+        src: "../assets/projects/aura/steer_3.mp4",
         caption: "<strong>Arrowing 3.</strong> The robot makes a slight right turn to avoid a traffic cone."
       }
     ];
