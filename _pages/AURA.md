@@ -20,7 +20,7 @@ institutions:
 nav: false
 nav_order: 1
 code_link: https://github.com/VAIL-UCLA/AURA
-pdf_link: https://github.com/VAIL-UCLA/AURA # TODO
+pdf_link: https://vail-ucla.github.io/assets/projects/aura/AURA.pdf # TODO
 
 
 # TODO update the demo video
