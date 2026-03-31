@@ -20,7 +20,7 @@ institutions:
 nav: false
 nav_order: 1
 code_link: https://github.com/VAIL-UCLA/AURA
-pdf_link: https://vail-ucla.github.io/assets/projects/aura/AURA.pdf # TODO
+pdf_link: https://github.com/VAIL-UCLA/AURA # TODO
 
 
 # TODO update the demo video
@@ -53,7 +53,7 @@ pdf_link: https://vail-ucla.github.io/assets/projects/aura/AURA.pdf # TODO
 <div class="img-container" style="width: 100%; margin: 0 auto;">
   <img src="../assets/projects/aura/framework.png" style="width: 100%; height: auto;" alt="Image" />
 </div>
-AURA pipeline consists of two key components:<br> (1) <strong>Multimodal Instruction Encoder + VLM Backbone</strong>: A multimodal encoder that turns egocentric RGB observations and human instructions into fused vision-language-instruction tokens. Human guidance is injected via a special instruction token produced by the <strong>Spatial-Aware Instruction Encoder (SIE)</strong>, which grounds drafting/arrowing prompts with modality-specific geometric embeddings and fuses them with instruction visuals through cross-/self-attention; the tokens are then processed by an InternVL3-2B backbone with LoRA adaptation.<br> (2) <strong>Anchor-Initialized Diffusion Action Decoder (DiT)</strong>: A diffusion-based policy executor that generates multi-modal future trajectories conditioned on context features, navigation goals, and timestep embeddings. Instead of starting from Gaussian noise, it initializes from 64 trajectory anchors (motion primitives clustered from UrbanWalks), then denoises via a lightweight Transformer to output refined trajectories and confidence scores for control.
+AURA pipeline consists of two key components:<br> (1) <strong>Multimodal Instruction Encoder + VLM Backbone</strong>: A multimodal encoder that turns egocentric RGB observations and human instructions into fused vision-language-instruction tokens. Human guidance is injected via a special instruction token produced by the <strong>Spatial-Aware Instruction Encoder (SIE)</strong>, which grounds draft/steering prompts with modality-specific geometric embeddings and fuses them with instruction visuals through cross-/self-attention; the tokens are then processed by an InternVL3-2B backbone with LoRA adaptation.<br> (2) <strong>Anchor-Initialized Diffusion Action Decoder (DiT)</strong>: A diffusion-based policy executor that generates multi-modal future trajectories conditioned on context features, navigation goals, and timestep embeddings. Instead of starting from Gaussian noise, it initializes from 64 trajectory anchors (motion primitives clustered from UrbanWalks), then denoises via a lightweight Transformer to output refined trajectories and confidence scores for control.
 
 
 
@@ -71,22 +71,22 @@ S2E pipeline consists of two key components:<br>
 
 ## Real-World Demo Visualizations Across Interfaces
 
-### ✏️ Drafting
+### ✏️ Draft
 
 <div class="img-container" style="width: 100%; margin: 0 auto;">
   <video id="aura-draft-player" muted autoplay playsinline controls style="width: 100%; height: auto;">
-    <source src="../assets/projects/aura/draft_1.mp4" type="video/mp4">
+    <source src="../assets/projects/aura/draft_1_crop.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
 </div>
 
 <p id="aura-draft-caption" style="text-align: center; font-size: 0.95rem; color: #666; margin-top: 0.6rem;">
-  <strong>Drafting 1.</strong> AURA follows high-level drafting guidance to complete instruction-following navigation in a real-world sidewalk scene.
+  <strong>Draft 1.</strong> AURA follows high-level drafting guidance to complete instruction-following navigation in a real-world sidewalk scene.
 </p>
 
 <div style="display: flex; justify-content: center; align-items: center; gap: 10px; margin-top: 0.6rem;">
   <button id="aura-draft-prev" type="button" style="padding: 0.35rem 0.7rem; border: 1px solid #ccc; border-radius: 6px; background: #fff;">&#8592; Prev</button>
-  <span id="aura-draft-label" style="font-size: 0.95rem; color: #555;">Drafting 1 / 3</span>
+  <span id="aura-draft-label" style="font-size: 0.95rem; color: #555;">Draft 1 / 3</span>
   <button id="aura-draft-next" type="button" style="padding: 0.35rem 0.7rem; border: 1px solid #ccc; border-radius: 6px; background: #fff;">Next &#8594;</button>
 </div>
 
@@ -94,15 +94,15 @@ S2E pipeline consists of two key components:<br>
   (function() {
     const videos = [
       {
-        src: "../assets/projects/aura/draft_1.mp4",
+        src: "../assets/projects/aura/draft_1_crop.mp4",
         caption: "<strong>Draft 1.</strong> The robot transitions from the crosswalk to the sidewalk while navigating around a lamp post."
       },
       {
-        src: "../assets/projects/aura/draft_2.mp4",
+        src: "../assets/projects/aura/draft_2_crop.mp4",
         caption: "<strong>Draft 2.</strong> The robot makes a slight right turn to avoid a tree along the sidewalk."
       },
       {
-        src: "../assets/projects/aura/draft_3.mp4",
+        src: "../assets/projects/aura/draft_3_crop.mp4",
         caption: "<strong>Draft 3.</strong> The robot traverses a crowded area with parked cars."
       }
     ];
@@ -120,7 +120,7 @@ S2E pipeline consists of two key components:<br>
       player.load();
       const playPromise = player.play();
       if (playPromise && typeof playPromise.catch === "function") playPromise.catch(function() {});
-      label.textContent = "Drafting " + (idx + 1) + " / " + videos.length;
+      label.textContent = "Draft " + (idx + 1) + " / " + videos.length;
       caption.innerHTML = videos[idx].caption;
     }
 
@@ -139,22 +139,22 @@ S2E pipeline consists of two key components:<br>
   })();
 </script>
 
-### ⌨️ Arrowing
+### ⌨️ Steer
 
 <div class="img-container" style="width: 100%; margin: 0 auto;">
   <video id="aura-steer-player" muted autoplay playsinline controls style="width: 100%; height: auto;">
-    <source src="../assets/projects/aura/steer_1.mp4" type="video/mp4">
+    <source src="../assets/projects/aura/steer_1_crop.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
 </div>
 
 <p id="aura-steer-caption" style="text-align: center; font-size: 0.95rem; color: #666; margin-top: 0.6rem;">
-  <strong>Arrowing 1.</strong> Under arrowing-mode interaction, the operator provides directional arrow guidance while AURA stabilizes low-level trajectory execution.
+  <strong>Steer 1.</strong> Under steer-mode interaction, the operator provides directional steering guidance while AURA stabilizes low-level trajectory execution.
 </p>
 
 <div style="display: flex; justify-content: center; align-items: center; gap: 10px; margin-top: 0.6rem;">
   <button id="aura-steer-prev" type="button" style="padding: 0.35rem 0.7rem; border: 1px solid #ccc; border-radius: 6px; background: #fff;">&#8592; Prev</button>
-  <span id="aura-steer-label" style="font-size: 0.95rem; color: #555;">Arrowing 1 / 3</span>
+  <span id="aura-steer-label" style="font-size: 0.95rem; color: #555;">Steer 1 / 3</span>
   <button id="aura-steer-next" type="button" style="padding: 0.35rem 0.7rem; border: 1px solid #ccc; border-radius: 6px; background: #fff;">Next &#8594;</button>
 </div>
 
@@ -162,16 +162,16 @@ S2E pipeline consists of two key components:<br>
   (function() {
     const videos = [
       {
-        src: "../assets/projects/aura/steer_1.mp4",
-        caption: "<strong>Arrowing 1.</strong> The robot makes a slight left adjustment to avoid colliding with the roadside planter."
+        src: "../assets/projects/aura/steer_1_crop.mp4",
+        caption: "<strong>Steer 1.</strong> The robot makes a slight left adjustment to avoid colliding with the roadside planter."
       },
       {
-        src: "../assets/projects/aura/steer_2.mp4",
-        caption: "<strong>Arrowing 2.</strong> The robot turns slightly left to avoid thin pillars that are difficult to perceive."
+        src: "../assets/projects/aura/steer_2_crop.mp4",
+        caption: "<strong>Steer 2.</strong> The robot turns slightly left to avoid thin pillars that are difficult to perceive."
       },
       {
-        src: "../assets/projects/aura/steer_3.mp4",
-        caption: "<strong>Arrowing 3.</strong> The robot makes a slight right turn to avoid a traffic cone."
+        src: "../assets/projects/aura/steer_3_crop.mp4",
+        caption: "<strong>Steer 3.</strong> The robot makes a slight right turn to avoid a traffic cone."
       }
     ];
     let idx = 0;
@@ -188,7 +188,7 @@ S2E pipeline consists of two key components:<br>
       player.load();
       const playPromise = player.play();
       if (playPromise && typeof playPromise.catch === "function") playPromise.catch(function() {});
-      label.textContent = "Arrowing " + (idx + 1) + " / " + videos.length;
+      label.textContent = "Steer " + (idx + 1) + " / " + videos.length;
       caption.innerHTML = videos[idx].caption;
     }
 
@@ -207,7 +207,7 @@ S2E pipeline consists of two key components:<br>
   })();
 </script>
 
-### 💬 Texting
+### 💬 Text
 
 <div class="img-container" style="width: 100%; margin: 0 auto;">
   <video id="aura-text-player" muted autoplay playsinline controls style="width: 100%; height: auto;">
@@ -217,12 +217,12 @@ S2E pipeline consists of two key components:<br>
 </div>
 
 <p id="aura-text-caption" style="text-align: center; font-size: 0.95rem; color: #666; margin-top: 0.6rem;">
-  <strong>Texting 1.</strong> In text-mode interaction, operators provide natural-language instructions while AURA converts language guidance into stable low-level navigation behavior.
+  <strong>Text 1.</strong> In text-mode interaction, operators provide natural-language instructions while AURA converts language guidance into stable low-level navigation behavior.
 </p>
 
 <div style="display: flex; justify-content: center; align-items: center; gap: 10px; margin-top: 0.6rem;">
   <button id="aura-text-prev" type="button" style="padding: 0.35rem 0.7rem; border: 1px solid #ccc; border-radius: 6px; background: #fff;">&#8592; Prev</button>
-  <span id="aura-text-label" style="font-size: 0.95rem; color: #555;">Texting 1 / 3</span>
+  <span id="aura-text-label" style="font-size: 0.95rem; color: #555;">Text 1 / 3</span>
   <button id="aura-text-next" type="button" style="padding: 0.35rem 0.7rem; border: 1px solid #ccc; border-radius: 6px; background: #fff;">Next &#8594;</button>
 </div>
 
@@ -231,15 +231,15 @@ S2E pipeline consists of two key components:<br>
     const videos = [
       {
         src: "../assets/projects/aura/text_1.mp4",
-        caption: "<strong>Texting 1.</strong>"
+        caption: "<strong>Text 1.</strong>"
       },
       {
         src: "../assets/projects/aura/text_2.mp4",
-        caption: "<strong>Texting 2.</strong>"
+        caption: "<strong>Text 2.</strong>"
       },
       {
         src: "../assets/projects/aura/text_3.mp4",
-        caption: "<strong>Texting 3.</strong>"
+        caption: "<strong>Text 3.</strong>"
       }
     ];
     let idx = 0;
@@ -256,7 +256,7 @@ S2E pipeline consists of two key components:<br>
       player.load();
       const playPromise = player.play();
       if (playPromise && typeof playPromise.catch === "function") playPromise.catch(function() {});
-      label.textContent = "Texting " + (idx + 1) + " / " + videos.length;
+      label.textContent = "Text " + (idx + 1) + " / " + videos.length;
       caption.innerHTML = videos[idx].caption;
     }
 
@@ -298,7 +298,7 @@ We build NavBench-GS, a 3D Gaussian Splatting-based benchmark for evaluating nav
 </div>
 
 <!-- <p style="text-align: center; font-size: 0.95rem; color: #666; margin-top: 0.6rem;"> -->
-We evaluate the instruction-following performance of our model on a wheeled robot developed by [Coco Robotics](https://www.cocodelivery.com/). The platform includes both the onboard robotic infrastructure and a teleoperation interface for monitoring and control. During testing, the inference computer is placed inside the robot's storage compartment.
+We evaluate the instruction-following performance of our model on COCO wheeled delivery robots. The platform includes both the onboard robotic infrastructure and a teleoperation interface for monitoring and control. During testing, the inference computer is placed inside the COCO robot's storage compartment.
 <!-- </p> -->
 
 
