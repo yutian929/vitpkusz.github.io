@@ -3,20 +3,32 @@ layout: research
 permalink: /BridgeSim/
 title:  "BridgeSim: Unveiling the OL-CL Gap in End-to-End Autonomous Driving"
 page_title: "BridgeSim: Unveiling the OL-CL Gap in End-to-End Autonomous Driving"
-# authors:
-#   - {name: "Zhenghao Peng", url: "https://pengzhenghao.github.io/"}
-#   - {name: "Yuxin Liu",  url: "#"}
-#   - {name: "Bolei Zhou",            url: "https://boleizhou.github.io/"}
+authors:
+  - {name: "Seth Z. Zhao*", url: "https://sethzhao506.github.io", institution: "1"}
+  - {name: "Luobin Wang*", url: "https://scholar.google.com/citations?user=rbmtcYsAAAAJ&hl=en", institution: "2"}
+  - {name: "Hongwei Ruan", url: "https://www.linkedin.com/in/hongwei-ruan/", institution: "2"}
+  - {name: "Yuxin Bao", url: "www.linkedin.com/in/rebecca-bao-c13752hz", institution: "1"}
+  - {name: "Yilan Chen", url: "https://yilanchen6.github.io", institution: "2"}
+  - {name: "Ziyang Leng", url: "https://scholar.google.com/citations?user=Lwz4be0AAAAJ&hl=en", institution: "1"}
+  - {name: "Abhijit Ravichandran", url: "https://www.linkedin.com/in/rabhijit/", institution: "2"}
+  - {name: "Honglin He", url: "https://dhlinv.github.io", institution: "1"}
+  - {name: "Zewei Zhou", url: "https://scholar.google.com/citations?user=TzhyHbYAAAAJ&hl=zh-CN", institution: "1"}
+  - {name: "Xu Han", url: "https://scholar.google.com/citations?user=Ndgk55IAAAAJ&hl=en", institution: "1"}
+  - {name: "Abhishek Peri", url: "https://www.linkedin.com/in/abhishek-peri/", institution: "3"}
+  - {name: "Zhiyu Huang", url: "https://mczhi.github.io", institution: "1"}
+  - {name: "Pranav Desai", url: "https://www.linkedin.com/in/pndesai2/", institution: "3"}
+  - {name: "Henrik Christensen", url: "https://scholar.google.com/citations?user=MA8rI0MAAAAJ&hl=en", institution: "2"}
+  - {name: "Jiaqi Ma", url: "https://mobility-lab.seas.ucla.edu/about/", institution: "1"}
+  - {name: "Bolei Zhou", url: "https://boleizhou.github.io/", institution: "1"}
 institutions:
-    - {name: "<p>University of California, Los Angeles</p>"}
-    - {name: "<p>University of California, San Diego</p>"}
-    - {name: "<p>Qualcomm</p>"}
+    - {name: "<p>University of California, Los Angeles</p>", institution: "1"}
+    - {name: "<p>University of California, San Diego</p>", institution: "2"}
+    - {name: "<p>Qualcomm</p>", institution: "3"}
 nav: false
 nav_order: 1
 code_link: https://github.com/VAIL-UCLA/BridgeSim
 # pdf_link: https://arxiv.org/pdf/2506.23316
 ---
-
 
 <style>
 .video-container {
@@ -49,30 +61,6 @@ code_link: https://github.com/VAIL-UCLA/BridgeSim
 }
 </style>
 
-
-<div class="img-container" style="width: 80%; margin: auto auto;">
-    <img src="../assets/projects/bridgesim/bridgesim.png" class="my-image" alt="Image" />
-</div>
-
-
-**BridgeSim** is a unified cross-simulator platform designed to evaluate OL pretrained E2E driving policies within high-fidelity CL environments in the MetaDrive simulator. BridgeSim designs a  Furthermore, BridgeSim offers a flexible deployment setting to simulate open-loop policy with varying execution frequencies and simulation horizons, providing the functional depth necessary for systematic and rigorous diagnosis of OL-CL gap. Consequently, BridgeSim bridges the critical divide between open-loop benchmarks limited to short-term static prediction and existing closed-loop frameworks that often lack the comprehensive functionality and annotations required for complex, reactive stress-testing.
-
-&nbsp;
-&nbsp;
-:traffic_light: Unified structural framework on low-level control for policy transfer to maintain state-action compatibility across domains
-
-&nbsp;
-&nbsp;
-:mag: Unified scenario protocol to incorporate diverse map scenarios (e.g., nuPlan, WOMD, and nuScenes) with heterogeneous traffic modes (e.g., log-replay, IDM and adversarial policies) to stress-test E2E driving policies under closed-loop simulation environment.
-
-&nbsp;
-&nbsp;
-:rocket: Unified open-loop and closed-loop simulation modes and metrics for comprehensive evaluations.
-
-
-<!--research-section-splitter-->
-
-
 ## Abstract
 
 End-to-end autonomous driving has seen rapid progress on non-reactive simulation benchmarks such as NAVSIM, where planners are evaluated on PDMS-based metrics without environmental feedback. Yet gains on these open-loop (OL) metrics do not reliably transfer to closed-loop (CL) deployment, and the field continues to optimize for open-loop improvements. In this paper, we systematically decompose the root causes of this OL–CL deployment gap into two key factors: Information Asymmetry, resulting from observational domain shifts, and Objective Mismatch, driven by train-test optimization misalignment. Through principled analysis, we demonstrate that while Information Asymmetry is largely recoverable with standard adaptation, the primary catalyst for performance collapse is Objective Mismatch, specifically, biased Q-value estimates that fail to account for the reactive nature of the environment. We further show that under this mismatch, improving open-loop accuracy or scaling test-time computation over the open-loop objective yields diminishing or negative closed-loop returns. To this end, we propose a Test-Time Adaptation (TTA) framework that mitigates observational shift and debiases action-value estimates in inference time. Extensive experiments show that TTA effectively mitigates these biases and exhibits more favorable scaling dynamics than its baseline counterparts. Given these findings, we suggest the community reassess the prevailing reliance on non-reactive evaluation in driving research, and move toward closed-loop-aligned training and evaluation objectives that account for the interactive nature of real-world driving. 
@@ -95,7 +83,7 @@ $$\bar{\pi}^{d}_{\theta,\phi}(a,z,o \mid s) \triangleq \pi_{\phi}(a\mid z)\,P_\t
 
 The root causes of the OL-CL deployment gap are decomposed into two key factors:
 
-- **Information Asymmetry** occurs when there exists an observational domain shift and the source policy receives collapsed partially observable states in the target simulator.
+- **Observational Domain Shift** occurs when there exists an observational domain shift and the source policy receives collapsed partially observable states in the target simulator.
 
 <div>
 $$\Delta_{\mathrm{obs}}(\theta, \phi) \triangleq J(\pi^{\mathrm{source}}_{\theta,\phi}) - J(\pi^{\mathrm{target}}_{\theta,\phi})$$
@@ -104,6 +92,8 @@ $$\Delta_{\mathrm{obs}}(\theta, \phi) \triangleq J(\pi^{\mathrm{source}}_{\theta
 <div class="img-container" style="width: 100%; margin: auto auto;">
     <img src="../assets/projects/bridgesim/3.2_empirical.png" class="my-image" alt="Image" />
 </div>
+
+
 
 - **Objective Mismatch** occurs when OL policies, which is optimized against OL proxy reward during the training time, encounters the CL objective that the learned Q-function gives deviated estimates of true state-action values.
 
@@ -126,9 +116,13 @@ We propose a test-time adaptation (TTA) framework to improve closed-loop robustn
 
 Source and target domains induce different latent distributions due to domain-dependent sensing, causing the pretrained policy to receive out-of-distribution representations. We use flow matching to learn a transport map that aligns the source latent distribution to the target, mapping source observations into representations compatible with the downstream policy and effectively recovering open-loop performance.
 
+<div class="img-container" style="width: 100%; margin: auto auto;">
+    <img src="../assets/projects/bridgesim/4.1.png" class="my-image" alt="Image" />
+</div>
+
 ### Test-time Policy Adaptation
 
-#### Unbiased Q-value Estimation
+**Unbiased Q-value Estimation**
 
 Standard Q-value estimation accumulates rewards infinitely, making it intractable under an open-loop model beyond the planning horizon $H$. We introduce a truncated action-value estimator that explicitly cancels the infinite tail:
 
@@ -138,9 +132,37 @@ $$\hat{Q}^{\pi}(s_t, \mathbf{a}_t) \triangleq R_k(s_t, \mathbf{a}_t) + \gamma^k 
 
 At each step, the agent selects the candidate trajectory maximizing $\hat{Q}^{\pi}$, dynamically filtering out plans suffering from biased open-loop estimation.
 
-#### Adaptive Replan
+**Adaptive Replan**
 
 Standard test-time scorers operate memorylessly, selecting from the current candidate set at every step and causing action chattering. Instead, we carry forward the unexecuted remainder of the previous plan and retain it unless a new candidate yields a strictly higher estimated return, promoting temporal consistency and reducing unnecessary replanning across consecutive decision steps.
+
+<div class="img-container" style="width: 100%; margin: auto auto;">
+    <img src="../assets/projects/bridgesim/4.2.png" class="my-image" alt="Image" />
+</div>
+
+<!--research-section-splitter-->
+
+## BridgeSim Simulator
+
+<div class="img-container" style="width: 80%; margin: auto auto;">
+    <img src="../assets/projects/bridgesim/bridgesim.png" class="my-image" alt="Image" />
+</div>
+
+
+**BridgeSim** is a unified cross-simulator platform designed to evaluate OL pretrained E2E driving policies within high-fidelity CL environments in the MetaDrive simulator. BridgeSim designs a  Furthermore, BridgeSim offers a flexible deployment setting to simulate open-loop policy with varying execution frequencies and simulation horizons, providing the functional depth necessary for systematic and rigorous diagnosis of OL-CL gap. Consequently, BridgeSim bridges the critical divide between open-loop benchmarks limited to short-term static prediction and existing closed-loop frameworks that often lack the comprehensive functionality and annotations required for complex, reactive stress-testing.
+
+&nbsp;
+&nbsp;
+:traffic_light: Unified structural framework on low-level control for policy transfer to maintain state-action compatibility across domains
+
+&nbsp;
+&nbsp;
+:mag: Unified scenario protocol to incorporate diverse map scenarios (e.g., nuPlan, WOMD, and nuScenes) with heterogeneous traffic modes (e.g., log-replay, IDM and adversarial policies) to stress-test E2E driving policies under closed-loop simulation environment.
+
+&nbsp;
+&nbsp;
+:rocket: Unified open-loop and closed-loop simulation modes and metrics for comprehensive evaluations.
+
 
 <!--research-section-splitter-->
 
