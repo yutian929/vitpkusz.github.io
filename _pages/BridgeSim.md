@@ -7,7 +7,7 @@ authors:
   - {name: "Seth Z. Zhao*", url: "https://sethzhao506.github.io", institution: "1"}
   - {name: "Luobin Wang*", url: "https://scholar.google.com/citations?user=rbmtcYsAAAAJ&hl=en", institution: "2"}
   - {name: "Hongwei Ruan", url: "https://www.linkedin.com/in/hongwei-ruan/", institution: "2"}
-  - {name: "Yuxin Bao", url: "www.linkedin.com/in/rebecca-bao-c13752hz", institution: "1"}
+  - {name: "Yuxin Bao", url: "https://www.linkedin.com/in/rebecca-bao-c13752hz/", institution: "1"}
   - {name: "Yilan Chen", url: "https://yilanchen6.github.io", institution: "2"}
   - {name: "Ziyang Leng", url: "https://scholar.google.com/citations?user=Lwz4be0AAAAJ&hl=en", institution: "1"}
   - {name: "Abhijit Ravichandran", url: "https://www.linkedin.com/in/rabhijit/", institution: "2"}
@@ -21,9 +21,9 @@ authors:
   - {name: "Jiaqi Ma", url: "https://mobility-lab.seas.ucla.edu/about/", institution: "1"}
   - {name: "Bolei Zhou", url: "https://boleizhou.github.io/", institution: "1"}
 institutions:
-    - {name: "<p>University of California, Los Angeles</p>", institution: "1"}
-    - {name: "<p>University of California, San Diego</p>", institution: "2"}
-    - {name: "<p>Qualcomm</p>", institution: "3"}
+    - {name: "UCLA", institution: "1"}
+    - {name: "UCSD", institution: "2"}
+    - {name: "Qualcomm", institution: "3"}
 nav: false
 nav_order: 1
 code_link: https://github.com/VAIL-UCLA/BridgeSim
