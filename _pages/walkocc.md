@@ -6,7 +6,7 @@ page_title: 'Monocular 3D Occupancy Perception for Robots on Sidewalks via Hybri
 
 authors:
 - {name: "Yukai Ma", url: "https://yukai-ma.github.io/", institution: "1,2"}
-- {name: "Jeo Lin", url: "https://joe-lin-tech.github.io/", institution: "1,3"}
+- {name: "Jeo Lin", url: "https://joe-lin-tech.github.io/", institution: "3"}
 - {name: "Liu Liu", url: "https://lyons66.github.io/", institution: "1,4"}
 - {name: "Honglin He", url: "https://dhlinv.github.io/", institution: "1"}
 - {name: "Lulu Ricketts", url: "https://www.linkedin.com/in/lulu-ricketts/", institution: "3"}
@@ -14,7 +14,7 @@ authors:
 authors2:
 - {name: "Brad Squicciarini", url: "https://www.linkedin.com/in/brad-squicciarini-478954126/", institution: "3"}
 - {name: "Yong Liu", url: "https://april.zju.edu.cn/our-team/", institution: "2"}
-- {name: "Bolei Zhou", url: "https://boleizhou.github.io/", institution: "1"}
+- {name: "Bolei Zhou", url: "https://boleizhou.github.io/", institution: "1,3"}
 
 institutions:
 
@@ -46,11 +46,11 @@ pdf_link: https://github.com/VAIL-UCLA/WalkOCC # TODO
     <ul style="list-style-type: none; padding-left: 0;">
     <strong>WalkOCC</strong> is a hybrid ray-marching 3D semantic occupancy learning framework for sidewalk robots that couples geometry grounding from limited paired LiDAR--RGB sequences with scalable learning from large-scale unpaired monocular images, improving robustness and generalization without costly 3D annotations..<br><br>
 
-🧭 Learns reliable sidewalk 3D occupancy from scarce paired sensor data by bootstrapping pseudo-3D supervision, stabilizing training compared to purely self-supervised pipelines.<br>
+🧭 It learns reliable sidewalk 3D occupancy from scarce paired sensor data by bootstrapping pseudo-3D supervision, stabilizing training compared to purely self-supervised pipelines.<br>
 
-🧩 Scales to diverse real-world appearances via mixed training on additional 2D-only images, strengthening cross-domain generalization beyond the paired-data distribution.<br>
+🧩 It scales to diverse real-world appearances via mixed training on additional 2D-only images, strengthening cross-domain generalization beyond the paired-data distribution.<br>
 
-📦 Introduces <strong>Sidewalk3D</strong>, a large-scale, cross-domain sidewalk perception dataset with LiDAR--camera paired sequences across multiple locations and times, plus 3D semantic occupancy annotations for benchmarking.<br>
+📦 We introduces <strong>Sidewalk3D</strong>, a large-scale, cross-domain sidewalk perception dataset with LiDAR--camera paired sequences across multiple locations and times, plus 3D semantic occupancy annotations for benchmarking.<br>
   </ul>
 </div>
 
@@ -216,7 +216,7 @@ pdf_link: https://github.com/VAIL-UCLA/WalkOCC # TODO
 </p>
 
 
-## Model Output Visualization
+<!-- ## Model Output Visualization
 
 
 <div class="img-container" style="width: 100%; margin: 0 auto;">
@@ -259,7 +259,7 @@ pdf_link: https://github.com/VAIL-UCLA/WalkOCC # TODO
 
 <p id="output-caption" style="text-align: center; font-size: 0.95rem; color: #666; margin-top: 0.6rem;">
   <strong>Refined LiDAR ground-truth examples.</strong> We visualize manually annotated global point clouds from three representative scenarios: tourist area (day), tourist area (night), and commercial district.
-</p>
+</p> -->
 
 
 ## Long-Horizon Inference Visualization
@@ -286,11 +286,11 @@ We present <strong>WalkOCC</strong>, a hybrid Ray-marching-based occupancy-learn
 
 
 <!--research-section-splitter-->
-## Dataset Distribution
+<!-- ## Dataset Distribution
 <div class="img-container" style="width: 100%; margin: 0 auto;">
   <img src="../assets/projects/walkocc/datadistrubution.png" style="width: 100%; height: auto;" alt="Image" />
 </div>
-<strong>Data distribution and representative scenes from Sidewalk3D.</strong> Our dataset spans diverse domains, geographic regions, and illumination conditions (day and night).
+<strong>Data distribution and representative scenes from Sidewalk3D.</strong> Our dataset spans diverse domains, geographic regions, and illumination conditions (day and night). -->
 
 ## Reference
 
@@ -302,11 +302,6 @@ We present <strong>WalkOCC</strong>, a hybrid Ray-marching-based occupancy-learn
          year={2026},
 }
 ```
-
-
-## Acknowledgement
-
-We thank <a href="https://www.cocodelivery.com/">Coco Robotics</a> for providing the experimental platform and data used in this work.
 
 <script>
 // This page has many videos. Browsers cap how many can decode at once, so
