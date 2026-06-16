@@ -6,7 +6,7 @@ page_title: 'Monocular 3D Occupancy Perception for Robots on Sidewalks via Hybri
 
 authors:
 - {name: "Yukai Ma", url: "https://yukai-ma.github.io/", institution: "1,2"}
-- {name: "Jeo Lin", url: "https://joe-lin-tech.github.io/", institution: "3"}
+- {name: "Joe Lin", url: "https://joe-lin-tech.github.io/", institution: "3"}
 - {name: "Liu Liu", url: "https://lyons66.github.io/", institution: "1,4"}
 - {name: "Honglin He", url: "https://dhlinv.github.io/", institution: "1"}
 - {name: "Lulu Ricketts", url: "https://www.linkedin.com/in/lulu-ricketts/", institution: "3"}
@@ -50,7 +50,7 @@ pdf_link: https://github.com/VAIL-UCLA/WalkOCC # TODO
 
 🧩 It scales to diverse real-world appearances via mixed training on additional 2D-only images, strengthening cross-domain generalization beyond the paired-data distribution.<br>
 
-📦 We introduces <strong>Sidewalk3D</strong>, a large-scale, cross-domain sidewalk perception dataset with LiDAR--camera paired sequences across multiple locations and times, plus 3D semantic occupancy annotations for benchmarking.<br>
+📦 We introduce <strong>Sidewalk3D</strong>, a large-scale, cross-domain sidewalk perception dataset with LiDAR--camera paired sequences across multiple locations and times, plus 3D semantic occupancy annotations for benchmarking.<br>
   </ul>
 </div>
 
@@ -297,7 +297,7 @@ We present <strong>WalkOCC</strong>, a hybrid Ray-marching-based occupancy-learn
 ```
 @article{ma2026monocular,
          title={Monocular 3D Occupancy Perception for Robots on Sidewalks via Hybrid 2D-3D Learning},
-         author={Ma, Yukai and Lin, Jeo and Liu, Liu and He, Honglin and Ricketts, Lulu and Squicciarini, Brad and Liu, Yong and Zhou, Bolei},
+         author={Ma, Yukai and Lin, Joe and Liu, Liu and He, Honglin and Ricketts, Lulu and Squicciarini, Brad and Liu, Yong and Zhou, Bolei},
          journal={arXiv preprint},
          year={2026},
 }
