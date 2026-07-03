@@ -120,14 +120,14 @@ _styles: >
 </style>
 
 <div class="sponsors-container">
-  <img src="/assets/img/nsf_logo.svg"  class="sponsor-logo">
-  <img src="/assets/img/onr_logo.png"  class="sponsor-logo">
-  <img src="/assets/img/amazon.png"  class="sponsor-logo">
-  <img src="/assets/img/sony.jpeg"  class="sponsor-logo">
-  <img src="/assets/img/intel.png"  class="sponsor-logo">
-  <img src="/assets/img/samsung.jpeg"  class="sponsor-logo">
-  <img src="/assets/img/cisco.jpeg"  class="sponsor-logo">
-  <img src="/assets/img/coco_logo.png"  class="sponsor-logo">
+  <img src="{{ '/assets/img/nsf_logo.svg' | relative_url }}"  class="sponsor-logo">
+  <img src="{{ '/assets/img/onr_logo.png' | relative_url }}"  class="sponsor-logo">
+  <img src="{{ '/assets/img/amazon.png' | relative_url }}"  class="sponsor-logo">
+  <img src="{{ '/assets/img/sony.jpeg' | relative_url }}"  class="sponsor-logo">
+  <img src="{{ '/assets/img/intel.png' | relative_url }}"  class="sponsor-logo">
+  <img src="{{ '/assets/img/samsung.jpeg' | relative_url }}"  class="sponsor-logo">
+  <img src="{{ '/assets/img/cisco.jpeg' | relative_url }}"  class="sponsor-logo">
+  <img src="{{ '/assets/img/coco_logo.png' | relative_url }}"  class="sponsor-logo">
   <!-- Add more sponsor logos as needed -->
 </div>
 <!-- ============================================ -->

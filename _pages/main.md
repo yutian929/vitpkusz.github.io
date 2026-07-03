@@ -82,7 +82,7 @@ highlighted_projects:
 
 <div class="header-container">
   <div class="logo-container">
-    <img src="/assets/img/logo.png" alt="Logo 2">
+    <img src="{{ '/assets/img/logo.png' | relative_url }}" alt="Logo 2">
   </div>
   <div class="lab-title">
     Vision and Autonomy Intelligence Lab
