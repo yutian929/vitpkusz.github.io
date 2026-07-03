@@ -1,4 +1,4 @@
-## Link:  https://vitpkusz.github.io/
+## Link:  https://vit.pkusz.github.io/
 
 
 ## Setup
