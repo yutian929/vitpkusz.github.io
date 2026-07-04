@@ -2,20 +2,24 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: Vision and Autonomy Intelligence Lab # the website title (if blank, full name will be used instead)
-first_name: VAIL
+title: Visual Intelligence Team # the website title (if blank, full name will be used instead)
+first_name: Visual Intelligence Team
 middle_name:
 last_name:
 contact_note: >
 
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Vision and Autonomy Intelligence Lab
+  Visual Intelligence Team, HRI Lab, Peking University Shenzhen
 footer_text: >
+  HRI Lab, Peking University Shenzhen.
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-keywords: # add your own keywords or leave empty
+keywords:
+  - visual intelligence
+  - human-robot interaction
+  - Peking University Shenzhen
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: vail.png # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+icon: vit-pkusz/logo.png # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
 url: https://vitpkusz.github.io # the base hostname & protocol for your site
 baseurl: /vit.pkusz.github.io # the subpath of your site, e.g. /blog/. Leave blank for root

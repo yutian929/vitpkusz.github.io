@@ -1,268 +1,319 @@
 ---
 layout: page
 permalink: /
-title: Lab
-description:
-
-# Video carousel auto-advance timing (in milliseconds)
-carousel_autoplay_delay: 3500
-
-highlighted_projects:
-
-  - teaser_video: /assets/video/urbanverse_demo.mp4
-    teaser_img: 
-    caption: 
-    title: "UrbanVerse: Scaling Urban Simulation by Watching City-Tour Videos"
-    link: https://urbanverseproject.github.io/
-  - teaser_video: /assets/video/s2e_demo.mp4
-    teaser_img: 
-    caption: 
-    title: "From Seeing to Experiencing: Scaling Navigation Foundation Models with Reinforcement Learning"
-    link: https://vail-ucla.github.io/S2E/
-  - teaser_video: /assets/video/josh.mp4
-    teaser_img: 
-    caption: 
-    title: "Joint Optimization for 4D Human-Scene Reconstruction in the Wild"
-    link: https://vail-ucla.github.io/JOSH/
-  - teaser_video: /assets/video/SceneStreamer_video.mp4
-    teaser_img: 
-    caption: 
-    title: "SceneStreamer: Continuous Scenario Generation as Next Token Group Prediction"
-    link: https://vail-ucla.github.io/scenestreamer/ 
-  - teaser_video: /assets/video/urbansim_demo.mp4
-    teaser_img: 
-    caption: 
-    title: "Towards Autonomous Micromobility through Scalable Urban Simulation"
-    link: https://metadriverse.github.io/urbansim/
-  - teaser_video: /assets/video/vid2sim_demo.mp4
-    teaser_img: 
-    caption: 
-    title: "Vid2Sim: Realistic and Interactive Simulation from Video for Urban Navigation"
-    link: https://metadriverse.github.io/vid2sim/
-  - teaser_video: /assets/video/dreamland_demo.mp4
-    teaser_img: 
-    caption: 
-    title: "Dreamland: Controllable World Creation with Simulator and Generative Models"
-    link: https://metadriverse.github.io/dreamland/
-  - teaser_video: /assets/video/ppl_demo.mp4
-    teaser_img: 
-    caption: 
-    title: "Predictive Preference Learning from Human Interventions"
-    
----
-
-<style>
-  .header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 2rem;
-    margin-top: 1rem;
+title: Home
+description: Visual Intelligence Team, HRI Lab, PKU Shenzhen
+_styles: >
+  .vit-home {
+    --vit-accent: #a50f1c;
+    --vit-accent-soft: rgba(165, 15, 28, 0.08);
   }
-  
-  .logo-container {
-    display: flex;
+
+  .vit-hero {
+    display: grid;
+    grid-template-columns: minmax(88px, 120px) minmax(0, 1fr);
+    gap: 1.25rem;
     align-items: center;
-    gap: 1rem;
+    padding: 1.25rem 0 1.75rem;
+    border-bottom: 1px solid var(--global-divider-color);
   }
-  
-  .logo-container img {
-    height: 60px;
-    width: auto;
+
+  .vit-logo {
+    width: 112px;
+    height: 112px;
     object-fit: contain;
   }
-  
-  .lab-title {
-    font-size: 2rem;
-    font-weight: bold;
+
+  .vit-eyebrow {
+    margin: 0 0 0.35rem;
+    color: var(--vit-accent);
+    font-size: 0.92rem;
+    font-weight: 700;
+    letter-spacing: 0;
+  }
+
+  .vit-title {
+    margin: 0;
     color: var(--global-text-color);
-    text-align: right;
-  }
-</style>
-
-<div class="header-container">
-  <div class="logo-container">
-    <img src="{{ '/assets/img/logo.png' | relative_url }}" alt="Logo 2">
-  </div>
-  <div class="lab-title">
-    Vision and Autonomy Intelligence Lab
-  </div>
-</div>
-
-<!-- ============================================ -->
-<div class="clearfix">
-<!-- Want to say something here? -->
-</div>
-<!-- ============================================ -->
-
-
-<!-- ============================================ -->
-<!-- Swiper CSS -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
-<!-- Swiper Styles (Updated Style, No Background Change) -->
-<style>
-  .swiper {
-    width: 100%;
-    height: 500px;
-    margin-bottom: 2rem;
+    font-size: clamp(2rem, 5vw, 3.25rem);
+    font-weight: 800;
+    line-height: 1.05;
   }
 
-  .swiper-slide {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  .vit-subtitle {
+    margin: 0.65rem 0 0;
+    color: var(--global-text-color-light);
+    font-size: 1.05rem;
+  }
+
+  .vit-section {
+    margin-top: 2.4rem;
+  }
+
+  .vit-section h2 {
+    margin: 0 0 1rem;
+    color: var(--global-text-color);
+    font-size: 1.45rem;
+    font-weight: 750;
+  }
+
+  .vit-panel {
+    padding: 1.1rem 1.2rem;
+    border: 1px solid var(--global-divider-color);
+    border-radius: 8px;
     background: var(--global-card-bg-color);
-    text-align: center;
-    font-size: 18px;
   }
 
-    .swiper-button-next::after,
-    .swiper-button-prev::after {
-      color: var(--global-theme-color); /* Change this to any color you want */
-      font-size: 24px; /* Optional: tweak size */
-    }
-    
-    .swiper-pagination-bullet-active {
-      background: var(--global-theme-color); /* Color of the currently active bullet */
-    }
-
-  .swiper-slide video,
-  .swiper-slide img {
-    width: 100%;
-    height: 100%;
-    max-height: 400px;
-    object-fit: cover;
-    border-radius: 12px;
-
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); /* subtle soft shadow */
-    overflow: hidden;    /* to prevent shadow from being clipped */
+  .vit-news-list,
+  .vit-award-list,
+  .vit-name-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
   }
 
-  .slide-title {
-    margin-top: 0.5rem;
-    font-weight: bold;
-    font-size: 1.1rem;
+  .vit-news-list li + li,
+  .vit-award-list li + li,
+  .vit-name-list li + li {
+    margin-top: 0.85rem;
+  }
+
+  .vit-date {
+    display: block;
+    color: var(--vit-accent);
+    font-weight: 700;
+  }
+
+  .vit-paper {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(260px, 42%);
+    gap: 1.25rem;
+    align-items: center;
+  }
+
+  .vit-paper h3,
+  .vit-team-group h3 {
+    margin: 0 0 0.55rem;
     color: var(--global-text-color);
+    font-size: 1.08rem;
+    font-weight: 750;
+    line-height: 1.3;
   }
-</style>
 
-<!-- Swiper Markup -->
-<div class="swiper mySwiper">
-  <div class="swiper-wrapper">
-    {% for item in page.highlighted_projects %}
-      <div class="swiper-slide">
-        {% if item.link %}
-          <a href="{{ item.link | relative_url }}" style="text-decoration: none; color: inherit;">
-        {% endif %}
+  .vit-paper p {
+    margin: 0.45rem 0 0;
+  }
 
-        {% if item.teaser_video %}
-          <video
-            src="{{ item.teaser_video | relative_url }}"
-            autoplay
-            muted
-            loop
-            playsinline
-            poster="{{ item.teaser_img | relative_url }}"
-          ></video>
-        {% elsif item.teaser_img %}
-          <img src="{{ item.teaser_img | relative_url }}" alt="{{ item.title }}" />
-        {% endif %}
+  .vit-venue {
+    color: var(--global-text-color-light);
+  }
 
-        {% if item.title %}
-          <div class="slide-title">{{ item.title }}</div>
-        {% endif %}
+  .vit-paper img {
+    width: 100%;
+    aspect-ratio: 595 / 333;
+    object-fit: contain;
+    border: 1px solid var(--global-divider-color);
+    border-radius: 8px;
+    background: #fff;
+  }
 
-        {% if item.link %}
-          </a>
-        {% endif %}
-      </div>
-    {% endfor %}
-  </div>
+  .vit-award-list li {
+    padding-left: 0.9rem;
+    border-left: 3px solid var(--vit-accent);
+  }
 
-  <!-- Swiper UI -->
-  <div class="swiper-button-next"></div>
-  <div class="swiper-button-prev"></div>
-  <div class="swiper-pagination"></div>
-</div>
+  .vit-team-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+  }
 
-<!-- Swiper JS -->
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  .vit-team-group {
+    padding: 1rem;
+    border: 1px solid var(--global-divider-color);
+    border-radius: 8px;
+    background: var(--global-card-bg-color);
+  }
 
-<!-- Swiper Initialization -->
-<script>
-  var swiper = new Swiper(".mySwiper", {
-    spaceBetween: 30,
-    centeredSlides: true,
-    loop: false,
-    watchSlidesProgress: true,
-    speed: 1000,
-    effect: 'fade',
-    fadeEffect: {
-      crossFade: true
-    },
-    autoplay: {
-      delay: {{ page.carousel_autoplay_delay | default: 3500 }},
-      disableOnInteraction: false,
-      reverseDirection: false,
-      stopOnLastSlide: false,
-    },
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-      dynamicBullets: false,
-      type: 'bullets',
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    on: {
-      slideChangeTransitionStart: function () {
-        // Play the next slide's video at the start of transition
-        const activeSlide = this.slides[this.activeIndex];
-        const activeVideo = activeSlide.querySelector('video');
-        if (activeVideo) {
-          activeVideo.currentTime = 0;
-          activeVideo.play();
-        }
-      },
-      slideChangeTransitionEnd: function () {
-        // Pause and reset non-active videos after transition completes
-        const videos = document.querySelectorAll('.swiper-slide video');
-        videos.forEach((video, index) => {
-          if (index !== this.activeIndex) {
-            video.pause();
-            video.currentTime = 0;
-          }
-        });
-      },
-      init: function () {
-        // Play first video on init
-        const firstVideo = this.slides[0].querySelector('video');
-        if (firstVideo) {
-          firstVideo.currentTime = 0;
-          firstVideo.play();
-        }
-      },
-      reachEnd: function () {
-        setTimeout(() => {
-          this.slideTo(0);
-        }, {{ page.carousel_autoplay_delay | default: 3500 }});
-      }
+  .vit-team-lead {
+    grid-column: 1 / -1;
+  }
+
+  .vit-person {
+    display: grid;
+    grid-template-columns: 128px minmax(0, 1fr);
+    gap: 1rem;
+    align-items: center;
+  }
+
+  .vit-person img {
+    width: 128px;
+    height: 128px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid var(--global-divider-color);
+  }
+
+  .vit-person strong,
+  .vit-name-list li {
+    color: var(--global-text-color);
+    font-weight: 650;
+  }
+
+  html[data-theme='dark'] .vit-paper img {
+    background: #f8f8f8;
+  }
+
+  @media (max-width: 720px) {
+    .vit-hero,
+    .vit-paper,
+    .vit-team-grid,
+    .vit-person {
+      grid-template-columns: 1fr;
     }
-  });
-</script>
 
+    .vit-logo,
+    .vit-person img {
+      width: 112px;
+      height: 112px;
+    }
 
-<!-- ============================================ -->
-<!-- News -->
-<h2>
-News
-</h2>
-{% include news.liquid limit=true %}
-<!-- ============================================ -->
+    .vit-paper img {
+      max-width: 100%;
+    }
+  }
+---
 
+<div class="vit-home">
+  <section class="vit-hero" aria-label="Visual Intelligence Team">
+    <img class="vit-logo" src="{{ '/assets/img/vit-pkusz/logo.png' | relative_url }}" alt="Visual Intelligence Team logo">
+    <div>
+      <p class="vit-eyebrow">HRI Lab | PKU Shenzhen</p>
+      <h1 class="vit-title">Visual Intelligence Team</h1>
+      <p class="vit-subtitle">Visual Intelligence Team, HRI Lab, PKU Shenzhen</p>
+    </div>
+  </section>
 
-{% include recent_publications.liquid %}
+  <section class="vit-section" aria-labelledby="vit-news">
+    <h2 id="vit-news">News</h2>
+    <div class="vit-panel">
+      <ul class="vit-news-list">
+        <li>
+          <span class="vit-date">June 30, 2026</span>
+          Four students earned their Master's degrees. Congratulations to Jiajie Liu, Jinyan Zhang, Jingting Liu, Di Wang!
+        </li>
+        <li>
+          <span class="vit-date">June 18, 2026</span>
+          Two papers are accepted to ECCV 2026. Congratulations to Ziyi Wang, Jiaying Lin!
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="vit-section" aria-labelledby="vit-papers">
+    <h2 id="vit-papers">Recent Papers</h2>
+    <div class="vit-panel vit-paper">
+      <div>
+        <h3>DAP: Doppler-aware Point Network for Heterogeneous mmWave Action Recognition</h3>
+        <p>Jiaying Lin, Shiman Wu, Jinfu Liu, Can Wang, Mengyuan Liu</p>
+        <p class="vit-venue">European Conference on Computer Vision (ECCV), 2026</p>
+      </div>
+      <img src="{{ '/assets/img/vit-pkusz/dap.png' | relative_url }}" alt="DAP dataset and protocol overview">
+    </div>
+  </section>
+
+  <section class="vit-section" aria-labelledby="vit-awards">
+    <h2 id="vit-awards">Awards</h2>
+    <div class="vit-panel">
+      <ul class="vit-award-list">
+        <li>Jiajie Liu: Peking University Outstanding Graduate, 2026</li>
+        <li>Peiming Li: Peking University National Scholarship, 2025</li>
+        <li>Peiming Li: Peking University BYD Scholarship, 2025</li>
+        <li>Ziyi Wang: Peking University Luo Yuehua Scholarship, 2025</li>
+        <li>Ziyi Wang: Peking University Merit Student, 2025</li>
+        <li>Jiajie Liu: Peking University Outstanding Research Award, 2025</li>
+        <li>Jinyan Zhang: Peking University Merit Student, 2024</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="vit-section" aria-labelledby="vit-team">
+    <h2 id="vit-team">Team</h2>
+    <div class="vit-team-grid">
+      <section class="vit-team-group vit-team-lead">
+        <h3>Principal Investigator</h3>
+        <div class="vit-person">
+          <img src="{{ '/assets/img/vit-pkusz/mengyuan-liu.png' | relative_url }}" alt="Mengyuan Liu">
+          <strong>Mengyuan Liu</strong>
+        </div>
+      </section>
+
+      <section class="vit-team-group">
+        <h3>Postdoctoral Researchers</h3>
+        <ul class="vit-name-list">
+          <li>Yuxuan Li</li>
+        </ul>
+      </section>
+
+      <section class="vit-team-group">
+        <h3>Ph.D. Students</h3>
+        <ul class="vit-name-list">
+          <li>Xinshun Wang</li>
+          <li>Juyi Sheng</li>
+        </ul>
+      </section>
+
+      <section class="vit-team-group">
+        <h3>M.S. Students</h3>
+        <ul class="vit-name-list">
+          <li>Ziyi Wang</li>
+          <li>Peiming Li</li>
+          <li>Yangting Lin</li>
+          <li>Yutian Zhang</li>
+          <li>Jiaying Lin</li>
+          <li>Jianian Gong</li>
+          <li>Tianming Xu</li>
+          <li>Jiayu Zhang</li>
+          <li>Jincheng Li</li>
+          <li>Jiale Li</li>
+          <li>Zhicheng Liao</li>
+          <li>Mingjie Zhang</li>
+        </ul>
+      </section>
+
+      <section class="vit-team-group">
+        <h3>Visiting Students and Scholars</h3>
+        <ul class="vit-name-list">
+          <li>Wanying Zhang</li>
+          <li>Zhongbing Fang</li>
+          <li>Jinfu Liu</li>
+          <li>Zhichao Deng</li>
+          <li>Yuhang Wen</li>
+          <li>Zixuan Tang</li>
+          <li>Shidan He</li>
+          <li>Yang Liu</li>
+          <li>Zongying Li</li>
+          <li>Haoqiang Wang</li>
+          <li>Qianshuo Hu</li>
+          <li>Xin Du</li>
+          <li>Sheng Yan</li>
+          <li>Hongchang Jin</li>
+          <li>Yi Wang</li>
+          <li>Kefan Chen</li>
+          <li>Chao Yuan</li>
+          <li>Yulei Yang</li>
+        </ul>
+      </section>
+
+      <section class="vit-team-group">
+        <h3>Alumni</h3>
+        <ul class="vit-name-list">
+          <li>Jiajie Liu</li>
+          <li>Jinyan Zhang</li>
+          <li>Jingting Liu</li>
+          <li>Di Wang</li>
+        </ul>
+      </section>
+    </div>
+  </section>
+</div>
