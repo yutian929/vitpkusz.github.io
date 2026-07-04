@@ -1,6 +1,7 @@
 <div class="news">
-  {% if site.news != blank %}
-    {% assign news_size = site.news | size %}
+  {% assign vit_news = site.news | where_exp: 'item', 'item.vit_news' %}
+  {% if vit_news != blank %}
+    {% assign news_size = vit_news | size %}
     <div
       class="
         table-responsive
@@ -10,7 +11,7 @@
       "
     >
       <table class="table table-sm table-borderless" style="margin-bottom: 0; border-spacing: 0;">
-        {% assign news = site.news | reverse %}
+        {% assign news = vit_news | reverse %}
         {% assign news_limit = news_size %}
         {% for item in news limit: news_limit %}
           <tr style="line-height: 1.1;">

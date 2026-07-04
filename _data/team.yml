@@ -1,426 +1,233 @@
-# Principal Investigator # 
-- name: "Bolei Zhou"
+# Principal Investigator
+- name: "Mengyuan Liu"
   role: "Principal Investigator"
-  image: "../assets/team/bolei.jpg"
-  link: "https://boleizhou.github.io/"
-  affiliation: "UCLA"
+  image: "../assets/img/vit-pkusz/mengyuan-liu.png"
+  link: false
+  affiliation: "PKU Shenzhen"
 
-# Postdoctoral Scholars # 
-- name: "Wayne Wu"
-  role: "Postdoctoral Scholar"
+# Postdoctoral Researchers
+- name: "Yuxuan Li"
+  role: "Postdoctoral Researchers"
   image: "../assets/team/waynewu.jpg"
-  link: "https://wywu.github.io/"
-  affiliation: "UCLA"
+  link: false
+  affiliation: "PKU Shenzhen"
 
-
-# Graduate Students # 
-- name: "Zhizheng Liu"
-  role: "PhD Students"
+# Ph.D. Students
+- name: "Xinshun Wang"
+  role: "Ph.D. Students"
   image: "../assets/team/zhizheng.jpg"
-  link: "https://bosmallear.github.io/"
-  affiliation: "UCLA"
+  link: false
+  affiliation: "PKU Shenzhen"
 
-- name: "Sicheng Mo"
-  role: "PhD Students"
+- name: "Juyi Sheng"
+  role: "Ph.D. Students"
   image: "../assets/team/sichengmo.jpg"
-  link: "https://sichengmo.github.io/"
-  affiliation: "UCLA"
+  link: false
+  affiliation: "PKU Shenzhen"
 
-- name: "Haoyuan Cai"
-  role: "PhD Students"
+# M.S. Students
+- name: "Ziyi Wang"
+  role: "M.S. Students"
   image: "../assets/team/haoyuancai.jpg"
-  link: "https://haoyuancai.github.io/"
-  affiliation: "UCLA"
+  link: false
+  affiliation: "PKU Shenzhen"
 
-- name: "Zhihao Zhao"
-  role: "PhD Students"
+- name: "Peiming Li"
+  role: "M.S. Students"
   image: "../assets/team/zhihaozhao.jpeg"
-  link: "https://sethzhao506.github.io/"
-  affiliation: "UCLA"
+  link: false
+  affiliation: "PKU Shenzhen"
 
-- name: "Heewon Park"
-  role: "PhD Students"
+- name: "Yangting Lin"
+  role: "M.S. Students"
   image: "../assets/team/heewonpark.jpeg"
-  link: "https://www.linkedin.com/in/heewon-park-1st/?originalSubdomain=kr"
-  affiliation: "UCLA"
+  link: false
+  affiliation: "PKU Shenzhen"
 
-- name: "Honglin He"
-  role: "PhD Students"
+- name: "Yutian Zhang"
+  role: "M.S. Students"
   image: "../assets/team/honglinhe.jpg"
-  link: "https://dhlinv.github.io/"
-  affiliation: "UCLA"
+  link: false
+  affiliation: "PKU Shenzhen"
 
-
-- name: "Ziyang Leng"
-  role: "PhD Students"
+- name: "Jiaying Lin"
+  role: "M.S. Students"
   image: "../assets/team/matthewleng.jpg"
-  link: "https://matthew-leng.github.io/"
-  affiliation: "UCLA"
+  link: false
+  affiliation: "PKU Shenzhen"
 
-# Master and Undergraduate Students #
-
-- name: "Weizhen Wang"
-  role: "Master and Undergraduate Students"
+- name: "Jianian Gong"
+  role: "M.S. Students"
   image: "../assets/team/weizhenwang.jpg"
-  link: "https://weizhenwang-1210.github.io/"
-  affiliation: "UCLA"
+  link: false
+  affiliation: "PKU Shenzhen"
 
-- name: "Jack He"
-  role: "Master and Undergraduate Students"
+- name: "Tianming Xu"
+  role: "M.S. Students"
   image: "../assets/team/jackhe.jpg"
-  link: "https://jackhe313.github.io/"
-  affiliation: "UCLA"
+  link: false
+  affiliation: "PKU Shenzhen"
 
-- name: "Junhua Huang"
-  role: "Master and Undergraduate Students"
+- name: "Jiayu Zhang"
+  role: "M.S. Students"
   image: "../assets/team/junhuahuang.jpg"
-  link: "https://harry-junhua-huang.github.io/"
-  affiliation: "UCLA"
+  link: false
+  affiliation: "PKU Shenzhen"
 
-- name: "Selina Song"
-  role: "Master and Undergraduate Students"
+- name: "Jincheng Li"
+  role: "M.S. Students"
   image: "../assets/team/selinasong.jpeg"
-  link: "https://www.linkedin.com/in/selinasong/"
-  affiliation: "UCLA"
+  link: false
+  affiliation: "PKU Shenzhen"
 
-- name: "Leon Liu"
-  role: "Master and Undergraduate Students"
+- name: "Jiale Li"
+  role: "M.S. Students"
   image: "../assets/team/leonliu.png"
-  link: "https://www.linkedin.com/in/leonliu360/"
-  affiliation: "UCLA"
+  link: false
+  affiliation: "PKU Shenzhen"
 
-- name: "Vivek Alumootil"
-  role: "Master and Undergraduate Students"
+- name: "Zhicheng Liao"
+  role: "M.S. Students"
   image: "../assets/team/vivek.png"
-  link: "https://www.linkedin.com/in/vivekalumootil/"
-  affiliation: "UCLA"
+  link: false
+  affiliation: "PKU Shenzhen"
 
-- name: "Jason Zhang"
-  role: "Master and Undergraduate Students"
+- name: "Mingjie Zhang"
+  role: "M.S. Students"
   image: "../assets/team/jasonzhang.jpeg"
-  link: "https://www.linkedin.com/in/jasonszhang/"
-  affiliation: "UCLA"
+  link: false
+  affiliation: "PKU Shenzhen"
 
-- name: "Griffin Galimi"
-  role: "Master and Undergraduate Students"
+# Visiting Students and Scholars
+- name: "Wanying Zhang"
+  role: "Visiting Students and Scholars"
   image: "../assets/team/griffingalimi.jpeg"
-  link: "https://ggalimi.com/"
-  affiliation: "UCLA"
+  link: false
+  affiliation: "PKU Shenzhen"
 
-- name: "Yuxin Bao"
-  role: "Master and Undergraduate Students"
+- name: "Zhongbing Fang"
+  role: "Visiting Students and Scholars"
   image: "../assets/team/yuxinbao.jpg"
-  link: "https://www.linkedin.com/in/rebecca-bao-c13752hz/?locale=zh_CN"
-  affiliation: "UCLA"
+  link: false
+  affiliation: "PKU Shenzhen"
 
-- name: "Nathan Wei"
-  role: "Master and Undergraduate Students"
+- name: "Jinfu Liu"
+  role: "Visiting Students and Scholars"
   image: "../assets/team/nathanwei.jpg"
-  link: "https://www.linkedin.com/in/nathanwei/"
-  affiliation: "UCLA"
+  link: false
+  affiliation: "PKU Shenzhen"
 
-# Visiting Students #
-
-
-- name: "Haoxuan Wang"
-  role: "Visiting Students"
+- name: "Zhichao Deng"
+  role: "Visiting Students and Scholars"
   image: "../assets/team/haoxuanwang.jpg"
-  link: "https://hatchetproject.github.io/"
-  affiliation: "UCLA"
-
-# Robot members #
-- name: "Coco Delivery Robot"
-  role: "Robot Members"
-  image: "../assets/team/coco_robot.jpg"
   link: false
-  affiliation: "UCLA"
+  affiliation: "PKU Shenzhen"
 
-- name: "Booster T1"
-  role: "Robot Members"
-  image: "../assets/team/robot_man.jpg"
+- name: "Yuhang Wen"
+  role: "Visiting Students and Scholars"
+  image: "../assets/team/ophir.jpeg"
   link: false
-  affiliation: "UCLA"
+  affiliation: "PKU Shenzhen"
 
-- name: "Unitree Go2"
-  role: "Robot Members"
-  image: "../assets/team/robot_dog.jpg"
+- name: "Zixuan Tang"
+  role: "Visiting Students and Scholars"
+  image: "../assets/team/yuxinliu.jpeg"
   link: false
-  affiliation: "UCLA"
+  affiliation: "PKU Shenzhen"
 
-- name: "Robot Chair"
-  role: "Robot Members"
-  image: "../assets/team/robot_chair.jpg"
+- name: "Shidan He"
+  role: "Visiting Students and Scholars"
+  image: "../assets/team/liuliu.png"
   link: false
-  affiliation: "UCLA"
+  affiliation: "PKU Shenzhen"
 
-- name: "Lynx M20 Pro"
-  role: "Robot Members"
-  image: "../assets/team/lynx.png"
+- name: "Yang Liu"
+  role: "Visiting Students and Scholars"
+  image: "../assets/team/ziyangxie.jpg"
   link: false
-  affiliation: "UCLA"
+  affiliation: "PKU Shenzhen"
 
-- name: "EarthRover Mini"
-  role: "Robot Members"
-  image: "../assets/team/earthrover_mini.png"
+- name: "Zongying Li"
+  role: "Visiting Students and Scholars"
+  image: "../assets/team/yukaima.jpeg"
   link: false
-  affiliation: "UCLA"
+  affiliation: "PKU Shenzhen"
 
+- name: "Haoqiang Wang"
+  role: "Visiting Students and Scholars"
+  image: "../assets/team/zhenghao.jpeg"
+  link: false
+  affiliation: "PKU Shenzhen"
 
+- name: "Qianshuo Hu"
+  role: "Visiting Students and Scholars"
+  image: "../assets/team/joelin.jpeg"
+  link: false
+  affiliation: "PKU Shenzhen"
 
-# Alumni - PhD Studentss # 
-- name: "Zhenghao Peng"
-  role: "Alumni - Graduated PhD Students"
-  link: "https://pengzhenghao.github.io/"
-  year: "2022-2026"
-  affiliation: "Amazon FAR"
+- name: "Xin Du"
+  role: "Visiting Students and Scholars"
+  image: "../assets/team/zhizheng.jpg"
+  link: false
+  affiliation: "PKU Shenzhen"
 
-- name: "Qihang Zhang"
-  role: "Alumni - Graduated PhD Students"
-  link: "https://zqh0253.github.io/"
-  year: "2019-2025"
-  affiliation: "CUHK"
+- name: "Sheng Yan"
+  role: "Visiting Students and Scholars"
+  image: "../assets/team/sichengmo.jpg"
+  link: false
+  affiliation: "PKU Shenzhen"
 
-- name: "Yinghao Xu"
-  role: "Alumni - Graduated PhD Students"
-  link: "https://justimyhxu.github.io/"
-  year: "2019-2023"
-  affiliation: "Incoming Assistant Professor at HKUST"
+- name: "Hongchang Jin"
+  role: "Visiting Students and Scholars"
+  image: "../assets/team/haoyuancai.jpg"
+  link: false
+  affiliation: "PKU Shenzhen"
 
-- name: "Ceyuan Yang"
-  role: "Alumni - Graduated PhD Students"
-  link: "https://ceyuan.me/index.html"
-  year: "2018-2021"
-  affiliation: "Researcher at Shanghai AI Lab"
+- name: "Yi Wang"
+  role: "Visiting Students and Scholars"
+  image: "../assets/team/zhihaozhao.jpeg"
+  link: false
+  affiliation: "PKU Shenzhen"
 
-- name: "Yujun Shen"
-  role: "Alumni - Graduated PhD Students"
-  link: "https://shenyujun.github.io/"
-  year: "2018-2021"
-  affiliation: "Researcher at Alibaba Group"
+- name: "Kefan Chen"
+  role: "Visiting Students and Scholars"
+  image: "../assets/team/heewonpark.jpeg"
+  link: false
+  affiliation: "PKU Shenzhen"
 
-  
-# Alumni - Graduated Master's students #
-- name: "Yuxin Liu"
-  role: "Alumni - Graduated Master's Students"
-  link: "https://www.linkedin.com/in/yuxinclaire"
+- name: "Chao Yuan"
+  role: "Visiting Students and Scholars"
+  image: "../assets/team/honglinhe.jpg"
+  link: false
+  affiliation: "PKU Shenzhen"
+
+- name: "Yulei Yang"
+  role: "Visiting Students and Scholars"
+  image: "../assets/team/matthewleng.jpg"
+  link: false
+  affiliation: "PKU Shenzhen"
+
+# Alumni
+- name: "Jiajie Liu"
+  role: "Alumni"
+  link: false
   year: "2026"
-  affiliation: "Works at Woven by Toyota "
+  affiliation: "PKU Shenzhen"
 
-
-- name: "Ophir Siman-Tov"
-  role: "Alumni - Graduated Master's Students"
-  link: "https://www.linkedin.com/in/ophir-siman-tov/"
+- name: "Jinyan Zhang"
+  role: "Alumni"
+  link: false
   year: "2026"
-  affiliation: "Works at Google"
+  affiliation: "PKU Shenzhen"
 
-- name: "Pierce Chong"
-  role: "Alumni - Graduated Master's Students"
-  link: "https://www.linkedin.com/in/pierce-chong-0101/?originalSubdomain=sg"
-  year: "2025"
-  affiliation: "Works in Singapore"
-
-- name: "Chenda Duan"
-  role: "Alumni - Graduated Master's Students"
-  link: "https://chendaduan.com/"
-  year: "2024"
-  affiliation: "PhD Student at UCLA"
-
-- name: "Ben Klingher"
-  role: "Alumni - Graduated Master's Students"
-  link: "https://bklingher.github.io/"
-  year: "2024"
-  affiliation: "Works in Tech"
-
-- name: "Lalit Bhagat"
-  role: "Alumni - Graduated Master's Students"
-  link: "https://lalitbhagat7.github.io/"
-  year: "2023"
-  affiliation: "Applied scientist at Amazon"
-
-- name: "Jiawei Yang"
-  role: "Alumni - Graduated Master's Students"
-  link: "https://jiawei-yang.github.io/"
-  year: "2023"
-  affiliation: "PhD Student at USC"
-
-- name: "Nilay Shah"
-  role: "Alumni - Graduated Master's Students"
-  link: "https://www.linkedin.com/in/nilaymshah/"
-  year: "2022"
-  affiliation: "Previous Master student at UCLA"
-
-- name: "Hao Sun"
-  role: "Alumni - Graduated Master's Students"
-  link: "https://holarissun.github.io/"
-  year: "2019-2022"
-  affiliation: "PhD Student at Cambridge"
-
-- name: "Jiankai Sun"
-  role: "Alumni - Graduated Master's Students"
-  link: "https://web.stanford.edu/~jksun/"
-  year: "2019-2021"
-  affiliation: "PhD Student at Stanford"
-
-# Alumni - Undergraduates and student researchers #
-
-- name: "Ziyang Xie"
-  role: "Alumni - Undergraduates and Student Researchers"
-  link: "https://ziyangxie.site/"
-  year: "2025-2026"
-  affiliation: "Works in Tech"
-
-
-- name: "Liu Liu"
-  role: "Alumni - Undergraduates and Student Researchers"
-  link: "https://dusp.mit.edu/people/liu-liu"
+- name: "Jingting Liu"
+  role: "Alumni"
+  link: false
   year: "2026"
-  affiliation: "PhD student at MIT"
-- name: "Yukai Ma"
-  role: "Alumni - Undergraduates and Student Researchers"
-  link: "https://yukai-ma.github.io/"
-  year: "2025-2026"
-  affiliation: "PhD student at Zhejiang University"
-- name: "Joe Lin"
-  role: "Alumni - Undergraduates and Student Researchers"
-  link: "https://www.linkedin.com/in/joe-lin-tech"
-  year: "2024-2025"
-  affiliation: "Works at Coco Robotics"
-- name: "Mingxuan Liu"
-  role: "Alumni - Undergraduates and Student Researchers"
-  link: "https://oatmealliu.github.io/"
-  year: "2025"
-  affiliation: "PhD student at University of Trento"
-- name: "Jordan Lin"
-  role: "Alumni - Undergraduates and Student Researchers"
-  link: "https://kuanhenglin.github.io/"
-  year: "2022-2024"
-  affiliation: "PhD Student at Columbia University"
-- name: "Quanyi Li"
-  role: "Alumni - Undergraduates and Student Researchers"
-  link: "https://quanyili.github.io/"
-  year: "2020-2024"
-  affiliation: "Student researcher"
+  affiliation: "PKU Shenzhen"
 
-
-- name: "Yunsong Zhou"
-  role: "Alumni - Undergraduates and Student Researchers"
-  link: "https://zhouyunsong.github.io/"
-  year: "2024"
-  affiliation: "PhD Student at SJTU"
-- name: "Junge Zhang"
-  role: "Alumni - Undergraduates and Student Researchers"
-  link: "https://andy-zd.github.io/"
-  year: "2023"
-  affiliation: "PhD Student at UC Riverside"
-
-- name: "Yinggan Xu"
-  role: "Alumni - Undergraduates and Student Researchers"
-  link: "https://dibbla.space/"
-  year: "2023"
-  affiliation: "UCLA MSCS"
-- name: "Wenjie Mo"
-  role: "Alumni - Undergraduates and Student Researchers"
-  link: "https://wenjie-mo.github.io/"
-  year: "2022"
-  affiliation: "Works in LA"
-- name: "Alexander Swerdlow"
-  role: "Alumni - Undergraduates and Student Researchers"
-  link: "https://aswerdlow.com/"
-  year: "2022"
-  affiliation: "Graduate student at CMU"
-
-- name: "Lan Feng"
-  role: "Alumni - Undergraduates and Student Researchers"
-  link: "https://alan-lanfeng.github.io/"
-  year: "2021"
-  affiliation: "PhD Student at EPFL"
-
-- name: "Haoyue Bai"
-  role: "Alumni - Undergraduates and Student Researchers"
-  link: "https://haoyuebaizju.github.io/"
-  year: "2021"
-  affiliation: "PhD Student at UW Madison"
-
-- name: "Zhenghai Xue"
-  role: "Alumni - Undergraduates and Student Researchers"
-  link: "https://aidefender.github.io/"
-  year: "2021"
-  affiliation: "PhD Student at NTU"
-
-- name: "Jianyuan Wang"
-  role: "Alumni - Undergraduates and Student Researchers"
-  link: "https://jytime.github.io/"
-  year: "2021"
-  affiliation: "PhD Student at Oxford University"
-
-- name: "Yuanqi Du"
-  role: "Alumni - Undergraduates and Student Researchers"
-  link: "https://yuanqidu.github.io/"
-  year: "2021"
-  affiliation: "PhD Student at Cornell"
-
-- name: "Zhihan Liu"
-  role: "Alumni - Undergraduates and Student Researchers"
-  link: "https://www.linkedin.com/in/zhihan-liu-63a992218/"
-  year: "2021"
-  affiliation: "PhD Student at Northwestern"
-
-- name: "Tiga Leung"
-  role: "Alumni - Undergraduates and Student Researchers"
-  link: "https://tiga.netlify.app/"
-  year: "2018-2020"
-  affiliation: "Master study in UK"
-
-- name: "Shuhan Tan"
-  role: "Alumni - Undergraduates and Student Researchers"
-  link: "https://ariostgx.github.io/website/"
-  year: "2019"
-  affiliation: "PhD Student at UT Austin"
-
-- name: "Kaiwen Zha"
-  role: "Alumni - Undergraduates and Student Researchers"
-  link: "https://people.csail.mit.edu/kzha/"
-  year: "2019"
-  affiliation: "PhD Student at MIT"
-
-- name: "Bowen Pan"
-  role: "Alumni - Undergraduates and Student Researchers"
-  link: "https://people.csail.mit.edu/bpan/"
-  year: "2018-2019"
-  affiliation: "PhD Student at MIT"
-
-- name: "Jinjin Gu"
-  role: "Alumni - Undergraduates and Student Researchers"
-  link: "https://www.jasongt.com/"
-  year: "2018-2019"
-  affiliation: "PhD Student at Sydney University"
-
-- name: "Jiapeng Zhu"
-  role: "Alumni - Undergraduates and Student Researchers"
-  link: "https://www.jasongt.com/"
-  year: "2018-2019"
-  affiliation: "PhD Student at HKUST"
-
-- name: "Alex Andonian"
-  role: "Alumni - Undergraduates and Student Researchers"
-  link: "https://www.alexandonian.com/"
-  year: "2018"
-  affiliation: "PhD Student at MIT"
-
-- name: "Tete Xiao"
-  role: "Alumni - Undergraduates and Student Researchers"
-  link: "https://tetexiao.com/"
-  year: "2018"
-  affiliation: "PhD Student at UC Berkeley"
-
-- name: "Jimmy Wu"
-  role: "Alumni - Undergraduates and Student Researchers"
-  link: "https://jimmyyhwu.github.io/"
-  year: "2017"
-  affiliation: "PhD Student at Princeton"
-
-
-
-
-
-
+- name: "Di Wang"
+  role: "Alumni"
+  link: false
+  year: "2026"
+  affiliation: "PKU Shenzhen"

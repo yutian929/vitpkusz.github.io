@@ -4,232 +4,85 @@ permalink: /publications/
 title: Publications
 nav: true
 nav_order: 2
-description:  
+description:
 ---
+
 <style>
-  /* Make year headers more visible */
   .publications h2.year,
   .publications h2,
   .publications h3.year,
   .publications h3 {
     color: var(--global-theme-color) !important;
     font-weight: 600 !important;
-    font-size: 2.0rem !important;
-    margin-top: 0.0rem !important;
-    margin-bottom: 0.0rem !important;
-    position: relative;
+    font-size: 2rem !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+
+  .publication-tags-container {
+    margin-bottom: 1rem;
+  }
+
+  .tag-buttons {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
   }
-  
-  /* Style for "Before UCLA" badge - matches year format */
-  .year-badge {
-    color: var(--global-theme-color) !important;
-    font-weight: 600 !important;
-    font-size: 2.0rem !important;
+
+  .tag-btn {
+    border: 1px solid var(--global-divider-color);
+    border-radius: 6px;
+    background: var(--global-card-bg-color);
+    color: var(--global-text-color);
+    padding: 0.35rem 0.7rem;
+    line-height: 1.2;
   }
-  
-  /* Style for tags display under publications */
-  .publication-tags-display {
-    margin-top: 0.2rem;
-    font-size: 0.8rem;
-    color: var(--global-text-color-light);
-  }
-  
-  .publication-tags-display .tag-label {
-    font-weight: 300;
-    margin-right: 0.2rem;
-  }
-  
-  .publication-tags-display .tag-item {
-    display: inline;
-    margin-right: 0.2rem;
-    font-weight: 300;
-  }
-  
-  .publication-tags-display .tag-item:not(:last-child):after {
-    content: ",";
+
+  .tag-btn.active {
+    border-color: var(--global-theme-color);
+    color: var(--global-theme-color);
   }
 </style>
 
-Click the tags below to view our work by category. Please see [Google Scholar](https://scholar.google.com/citations?hl=en&user=9D4aG8AAAAAJ&view_op=list_works&sortby=pubdate) for more recent works and arXiv papers.
-<!-- Custom Tag Filter Buttons -->
-<div class="publication-tags-container mb-4">
+Selected publications from the Visual Intelligence Team.
+
+<div class="publication-tags-container">
   <div class="tag-buttons">
     <button class="tag-btn active" data-tag="all">All</button>
-    <!-- For now, we'll add common research area tags manually -->
     <button class="tag-btn" data-tag="Computer Vision">Computer Vision</button>
-    <button class="tag-btn" data-tag="Robotics">Robotics</button>
-    <button class="tag-btn" data-tag="Simulation">Simulation</button>
-    <button class="tag-btn" data-tag="Autonomy">Autonomy</button>
-    <button class="tag-btn" data-tag="Generative Models">Generative Models</button>
-    <button class="tag-btn" data-tag="Reinforcement Learning">Reinforcement Learning</button>
+    <button class="tag-btn" data-tag="Signal Processing">Signal Processing</button>
+    <button class="tag-btn" data-tag="Action Recognition">Action Recognition</button>
     <button class="tag-btn" data-tag="Others">Others</button>
-
   </div>
 </div>
 
 <div class="publications">
-
-{% bibliography %}
-
+  {% bibliography %}
 </div>
 
 <script>
-document.addEventListener('DOMContentLoaded', function() {
-  const tagButtons = document.querySelectorAll('.tag-btn');
-  const publications = document.querySelectorAll('.publications ol.bibliography li');
+  document.addEventListener("DOMContentLoaded", function () {
+    const tagButtons = document.querySelectorAll(".tag-btn");
+    const publications = document.querySelectorAll(".publications ol.bibliography li");
 
-  // Add tags display to each publication
-  publications.forEach(publication => {
-    const publicationDiv = publication.querySelector('div[data-tags]');
-    if (publicationDiv) {
-      const tags = publicationDiv.getAttribute('data-tags') || '';
-      if (tags) {
-        // Find the links section (where PDF, website links are)
-        const linksSection = publication.querySelector('.links');
-        if (linksSection) {
-          // Create tags display element
-          const tagsDisplay = document.createElement('div');
-          tagsDisplay.className = 'publication-tags-display';
-          
-          const tagLabel = document.createElement('span');
-          tagLabel.className = 'tag-label';
-          tagLabel.textContent = 'Tag: ';
-          tagsDisplay.appendChild(tagLabel);
-          
-          // Split tags and create badge for each
-          const tagArray = tags.split(',').map(tag => tag.trim()).filter(tag => tag);
-          tagArray.forEach((tag, index) => {
-            const tagBadge = document.createElement('span');
-            tagBadge.className = 'tag-item';
-            tagBadge.textContent = tag;
-            tagsDisplay.appendChild(tagBadge);
-          });
-          
-          // Insert after the links section
-          linksSection.parentNode.insertBefore(tagsDisplay, linksSection.nextSibling);
-        }
-      }
-    }
-  });
+    tagButtons.forEach((button) => {
+      button.addEventListener("click", function () {
+        tagButtons.forEach((btn) => btn.classList.remove("active"));
+        this.classList.add("active");
 
-  // Add "Before UCLA" badge only to year 2022
-  const yearSections = document.querySelectorAll('.publications h2, .publications h3, .publications .year');
-  yearSections.forEach(yearSection => {
-    const yearText = yearSection.textContent.trim();
-    const yearMatch = yearText.match(/\b(19|20)\d{2}\b/);
-    
-    if (yearMatch) {
-      const year = parseInt(yearMatch[0]);
-      if (year === 2022) {
-        // Add badge if it doesn't already exist
-        if (!yearSection.querySelector('.year-badge')) {
-          const badge = document.createElement('span');
-          badge.className = 'year-badge';
-          badge.textContent = 'Before UCLA';
-          yearSection.style.position = 'relative';
-          yearSection.classList.add('has-badge');
-          yearSection.insertBefore(badge, yearSection.firstChild);
-        }
-      }
-    }
-  });
+        const selectedTag = this.getAttribute("data-tag");
 
-  tagButtons.forEach(button => {
-    button.addEventListener('click', function() {
-      // Remove active class from all buttons
-      tagButtons.forEach(btn => btn.classList.remove('active'));
-      // Add active class to clicked button
-      this.classList.add('active');
-      
-      const selectedTag = this.getAttribute('data-tag');
-      
-      publications.forEach(publication => {
-        const publicationDiv = publication.querySelector('div[data-tags]');
-        
-        if (selectedTag === 'all') {
-          publication.style.display = 'block';
-        } else if (publicationDiv) {
-          const tags = publicationDiv.getAttribute('data-tags') || '';
-          const abbr = publicationDiv.getAttribute('data-abbr') || '';
-          
-          // Check if publication has the selected tag in its tags field or abbr field
-          const hasTag = tags.toLowerCase().includes(selectedTag.toLowerCase()) ||
-                        abbr.toLowerCase().includes(selectedTag.toLowerCase());
-          
-          if (hasTag) {
-            publication.style.display = 'block';
-          } else {
-            publication.style.display = 'none';
+        publications.forEach((publication) => {
+          const publicationDiv = publication.querySelector("div[data-tags]");
+          if (selectedTag === "all") {
+            publication.style.display = "block";
+            return;
           }
-        } else {
-          publication.style.display = 'none';
-        }
+
+          const tags = publicationDiv ? publicationDiv.getAttribute("data-tags") || "" : "";
+          publication.style.display = tags.toLowerCase().includes(selectedTag.toLowerCase()) ? "block" : "none";
+        });
       });
-      
-      // Hide empty year sections
-      hideEmptyYearSections();
     });
   });
-  
-  // Initialize year sections visibility on page load
-  hideEmptyYearSections();
-  
-  function hideEmptyYearSections() {
-    // Try different possible selectors for year headers
-    const yearSections = document.querySelectorAll('.publications h2, .publications h3, .publications .year');
-    
-    // Debug: log what we found
-    console.log('Found year sections:', yearSections.length);
-    
-    yearSections.forEach(yearSection => {
-      // Check if this looks like a year header (contains 4 digits)
-      const yearText = yearSection.textContent.trim();
-      const isYearHeader = /\b(19|20)\d{2}\b/.test(yearText);
-      
-      console.log('Checking element:', yearText, 'isYearHeader:', isYearHeader);
-      
-      if (!isYearHeader) return; // Skip if not a year header
-      
-      let nextElement = yearSection.nextElementSibling;
-      let hasVisiblePublications = false;
-      
-      // Check all publications under this year until we hit the next year section or end
-      while (nextElement) {
-        // If we hit another year header, stop
-        if ((nextElement.tagName === 'H2' || nextElement.tagName === 'H3') && 
-            /\b(19|20)\d{2}\b/.test(nextElement.textContent)) {
-          break;
-        }
-        
-        // Check if this is a publication list
-        if (nextElement.tagName === 'OL' && nextElement.classList.contains('bibliography')) {
-          const publications = nextElement.querySelectorAll('li');
-          let visibleCount = 0;
-          publications.forEach(pub => {
-            if (pub.style.display !== 'none') {
-              hasVisiblePublications = true;
-              visibleCount++;
-            }
-          });
-          console.log('Year', yearText, 'has', visibleCount, 'visible publications out of', publications.length);
-          break;
-        }
-        
-        nextElement = nextElement.nextElementSibling;
-      }
-      
-      // Hide/show year section based on whether it has visible publications
-      if (hasVisiblePublications) {
-        yearSection.style.display = 'block';
-        console.log('Showing year:', yearText);
-      } else {
-        yearSection.style.display = 'none';
-        console.log('Hiding year:', yearText);
-      }
-    });
-  }
-});
 </script>
