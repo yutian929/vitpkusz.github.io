@@ -204,7 +204,7 @@ html[data-theme='dark'] .col-md-5 {
 
 <div class="row align-items-center">
   <div class="col-md-5">
-    <img src="{{ '/assets/img/micromobility_workshop/teaser.png' | relative_url }}" class="my-image" alt="Image" style="width: 100%;" />
+    <img src="../assets/img/micromobility_workshop/teaser.png" class="my-image" alt="Image" style="width: 100%;" />
   </div>
   <div class="col-md-7">
     With the rapid development of Embodied AI technologies, a wide variety of mobile robots are starting to share the streets and sidewalks with pedestrians. While researchers have made significant progress in mobility, especially in autonomous driving, micromobility remains comparatively under-studied. Despite their potential, sidewalks present a much more complex and unpredictable environment for mobility than typical roads and streets. Broken curbs, uneven pavements, and narrow streets often make the terrain challenging for passage, while crowds of dense pedestrians make safe and efficient mobility even more difficult.
@@ -322,7 +322,7 @@ The workshop will take place on **TBD**, at **TBD**.
     <div class="col-xs-6 col-md-3">
         <div class="thumbnail">
             <div>
-                <img src="{{ '/assets/img/micromobility_workshop/dinesh.jpg' | relative_url }}" alt="Dinesh Monacha">
+                <img src="../assets/img/micromobility_workshop/dinesh.jpg" alt="Dinesh Monacha">
                 <ul class="social">
                     <a href="https://www.cs.umd.edu/people/dmanocha">
                         <li class="icon"><i class="fa fa-home"></i></li>
@@ -337,7 +337,7 @@ The workshop will take place on **TBD**, at **TBD**.
     <div class="col-xs-6 col-md-3">
         <div class="thumbnail">
             <div>
-                <img src="{{ '/assets/img/micromobility_workshop/joydeep.jpg' | relative_url }}" alt="Joydeep Biswas">
+                <img src="../assets/img/micromobility_workshop/joydeep.jpg" alt="Joydeep Biswas">
                 <ul class="social">
                     <a href="https://www.joydeepb.com/">
                         <li class="icon"><i class="fa fa-home"></i></li>
@@ -359,7 +359,7 @@ The workshop will take place on **TBD**, at **TBD**.
     <div class="col-xs-6 col-md-3">
         <div class="thumbnail">
             <div>
-                <img src="{{ '/assets/team/honglinhe.jpg' | relative_url }}" alt="Honglin He">
+                <img src="../assets/team/honglinhe.jpg" alt="Honglin He">
                 <ul class="social">
                     <a href="https://dhlinv.github.io/">
                         <li class="icon"><i class="fa fa-home"></i></li>
@@ -374,7 +374,7 @@ The workshop will take place on **TBD**, at **TBD**.
     <div class="col-xs-6 col-md-3">
         <div class="thumbnail">
             <div>
-                <img src="{{ '/assets/img/micromobility_workshop/mingxuan.png' | relative_url }}" alt="Mingxuan Liu">
+                <img src="../assets/img/micromobility_workshop/mingxuan.png" alt="Mingxuan Liu">
                 <ul class="social">
                     <a href="https://oatmealliu.github.io/">
                         <li class="icon"><i class="fa fa-home"></i></li>
@@ -389,7 +389,7 @@ The workshop will take place on **TBD**, at **TBD**.
     <div class="col-xs-6 col-md-3">
         <div class="thumbnail">
             <div>
-                <img src="{{ '/assets/img/micromobility_workshop/zhizheng.png' | relative_url }}" alt="Zhizheng Liu">
+                <img src="../assets/img/micromobility_workshop/zhizheng.png" alt="Zhizheng Liu">
                 <ul class="social">
                     <a href="https://bosmallear.github.io/">
                         <li class="icon"><i class="fa fa-home"></i></li>
@@ -407,7 +407,7 @@ The workshop will take place on **TBD**, at **TBD**.
     <div class="col-xs-6 col-md-3">
         <div class="thumbnail">
             <div>
-                <img src="{{ '/assets/img/micromobility_workshop/brad.avif' | relative_url }}" alt="Brad Squicciarini">
+                <img src="../assets/img/micromobility_workshop/brad.avif" alt="Brad Squicciarini">
                 <ul class="social">
                     <a href="https://www.linkedin.com/in/brad-squicciarini-478954126/">
                         <li class="icon"><i class="fa fa-home"></i></li>
@@ -422,7 +422,7 @@ The workshop will take place on **TBD**, at **TBD**.
     <div class="col-xs-6 col-md-3">
         <div class="thumbnail">
             <div>
-                <img src="{{ '/assets/team/bolei.jpg' | relative_url }}" alt="Bolei Zhou">
+                <img src="../assets/team/bolei.jpg" alt="Bolei Zhou">
                 <ul class="social">
                     <a href="https://boleizhou.github.io/">
                         <li class="icon"><i class="fa fa-home"></i></li>

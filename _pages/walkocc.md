@@ -216,52 +216,6 @@ pdf_link: https://arxiv.org/html/2606.19122
 </p>
 
 
-<!-- ## Model Output Visualization
-
-
-<div class="img-container" style="width: 100%; margin: 0 auto;">
-  <video id="output-player" muted autoplay loop playsinline controls style="width: 100%; height: auto;">
-    <source src="../assets/projects/walkocc/modeloutput.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-</div>
-
-<p id="output-caption" style="text-align: center; font-size: 0.95rem; color: #666; margin-top: 0.6rem;">
-  <strong>WalkOCC</strong> predicts not only 3D occupancy but also 2D depth and semantic segmentation. In the video, the first row shows pseudo-labels used for supervision, and the second row shows the model's inference results.
-</p>
-
-
-## Automatic Pseudo-Label Generation
-
-
-<div class="img-container" style="width: 100%; margin: 0 auto;">
-  <video id="output-player" muted autoplay loop playsinline controls style="width: 100%; height: auto;">
-    <source src="../assets/projects/walkocc/pseudo.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-</div>
-
-<p id="output-caption" style="text-align: center; font-size: 0.95rem; color: #666; margin-top: 0.6rem;">
-  <strong>Pseudo-Label Generation</strong>. 
-    With pre-calibrated and time-synchronized sensors, we project 3D LiDAR points onto 2D images to inherit per-point semantic labels. We then generate dense occupancy pseudo-labels using the SurroundOcc
-</p>
-
-
-## High-Quality Manual Annotations for the Test Set
-
-
-<div class="img-container" style="width: 100%; margin: 0 auto;">
-  <video id="output-player" muted autoplay loop playsinline controls style="width: 100%; height: auto;">
-    <source src="../assets/projects/walkocc/anno.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-</div>
-
-<p id="output-caption" style="text-align: center; font-size: 0.95rem; color: #666; margin-top: 0.6rem;">
-  <strong>Refined LiDAR ground-truth examples.</strong> We visualize manually annotated global point clouds from three representative scenarios: tourist area (day), tourist area (night), and commercial district.
-</p> -->
-
-
 ## Long-Horizon Inference Visualization
 
 
@@ -286,12 +240,6 @@ We present <strong>WalkOCC</strong>, a hybrid Ray-marching-based occupancy-learn
 
 
 <!--research-section-splitter-->
-<!-- ## Dataset Distribution
-<div class="img-container" style="width: 100%; margin: 0 auto;">
-  <img src="../assets/projects/walkocc/datadistrubution.png" style="width: 100%; height: auto;" alt="Image" />
-</div>
-<strong>Data distribution and representative scenes from Sidewalk3D.</strong> Our dataset spans diverse domains, geographic regions, and illumination conditions (day and night). -->
-
 ## Reference
 
 ```
