@@ -8,202 +8,202 @@
 # Postdoctoral Researchers
 - name: "Yuxuan Li"
   role: "Postdoctoral Researchers"
-  image: "../assets/team/waynewu.jpg"
+  image: "../assets/team/earthrover_mini.png"
   link: false
   affiliation: "PKU Shenzhen"
 
 # Ph.D. Students
 - name: "Xinshun Wang"
   role: "Ph.D. Students"
-  image: "../assets/team/zhizheng.jpg"
+  image: "../assets/team/wangxinshun.jpg"
   link: "https://scholar.google.com/citations?user=NflmfmEAAAAJ&hl=en"
   affiliation: "PKU Shenzhen"
 
 - name: "Juyi Sheng"
   role: "Ph.D. Students"
-  image: "../assets/team/sichengmo.jpg"
+  image: "../assets/team/earthrover_mini.png"
   link: false
   affiliation: "PKU Shenzhen"
 
 # M.S. Students
 - name: "Ziyi Wang"
   role: "M.S. Students"
-  image: "../assets/team/haoyuancai.jpg"
+  image: "../assets/team/earthrover_mini.png"
   link: false
   affiliation: "PKU Shenzhen"
 
 - name: "Peiming Li"
   role: "M.S. Students"
-  image: "../assets/team/zhihaozhao.jpeg"
+  image: "../assets/team/earthrover_mini.png"
   link: false
   affiliation: "PKU Shenzhen"
 
 - name: "Yangting Lin"
   role: "M.S. Students"
-  image: "../assets/team/heewonpark.jpeg"
+  image: "../assets/team/earthrover_mini.png"
   link: false
   affiliation: "PKU Shenzhen"
 
 - name: "Yutian Zhang"
   role: "M.S. Students"
-  image: "../assets/team/honglinhe.jpg"
+  image: "../assets/team/earthrover_mini.png"
   link: false
   affiliation: "PKU Shenzhen"
 
 - name: "Jiaying Lin"
   role: "M.S. Students"
-  image: "../assets/team/matthewleng.jpg"
+  image: "../assets/team/earthrover_mini.png"
   link: false
   affiliation: "PKU Shenzhen"
 
 - name: "Jianian Gong"
   role: "M.S. Students"
-  image: "../assets/team/weizhenwang.jpg"
+  image: "../assets/team/earthrover_mini.png"
   link: false
   affiliation: "PKU Shenzhen"
 
 - name: "Tianming Xu"
   role: "M.S. Students"
-  image: "../assets/team/jackhe.jpg"
+  image: "../assets/team/earthrover_mini.png"
   link: false
   affiliation: "PKU Shenzhen"
 
 - name: "Jianyu Zhang"
   role: "M.S. Students"
-  image: "../assets/team/junhuahuang.jpg"
+  image: "../assets/team/earthrover_mini.png"
   link: false
   affiliation: "PKU Shenzhen"
 
 - name: "Jincheng Li"
   role: "M.S. Students"
-  image: "../assets/team/selinasong.jpeg"
+  image: "../assets/team/earthrover_mini.png"
   link: false
   affiliation: "PKU Shenzhen"
 
 - name: "Jiale Li"
   role: "M.S. Students"
-  image: "../assets/team/leonliu.png"
+  image: "../assets/team/earthrover_mini.png"
   link: false
   affiliation: "PKU Shenzhen"
 
 - name: "Zhicheng Liao"
   role: "M.S. Students"
-  image: "../assets/team/vivek.png"
+  image: "../assets/team/earthrover_mini.png"
   link: false
   affiliation: "PKU Shenzhen"
 
 - name: "Mingjie Zhang"
   role: "M.S. Students"
-  image: "../assets/team/jasonzhang.jpeg"
+  image: "../assets/team/earthrover_mini.png"
   link: false
   affiliation: "PKU Shenzhen"
 
 # Visiting Students and Scholars
 - name: "Wanying Zhang"
   role: "Visiting Students and Scholars"
-  image: "../assets/team/griffingalimi.jpeg"
+  image: "../assets/team/earthrover_mini.png"
   link: false
   affiliation: "PKU Shenzhen"
 
 - name: "Zhongbing Fang"
   role: "Visiting Students and Scholars"
-  image: "../assets/team/yuxinbao.jpg"
+  image: "../assets/team/earthrover_mini.png"
   link: false
   affiliation: "PKU Shenzhen"
 
 - name: "Jinfu Liu"
   role: "Visiting Students and Scholars"
-  image: "../assets/team/nathanwei.jpg"
+  image: "../assets/team/earthrover_mini.png"
   link: false
   affiliation: "PKU Shenzhen"
 
 - name: "Zhichao Deng"
   role: "Visiting Students and Scholars"
-  image: "../assets/team/haoxuanwang.jpg"
+  image: "../assets/team/earthrover_mini.png"
   link: false
   affiliation: "PKU Shenzhen"
 
 - name: "Yuhang Wen"
   role: "Visiting Students and Scholars"
-  image: "../assets/team/ophir.jpeg"
+  image: "../assets/team/earthrover_mini.png"
   link: false
   affiliation: "PKU Shenzhen"
 
 - name: "Zixuan Tang"
   role: "Visiting Students and Scholars"
-  image: "../assets/team/yuxinliu.jpeg"
+  image: "../assets/team/earthrover_mini.png"
   link: false
   affiliation: "PKU Shenzhen"
 
 - name: "Shidan He"
   role: "Visiting Students and Scholars"
-  image: "../assets/team/liuliu.png"
+  image: "../assets/team/earthrover_mini.png"
   link: false
   affiliation: "PKU Shenzhen"
 
 - name: "Yang Liu"
   role: "Visiting Students and Scholars"
-  image: "../assets/team/ziyangxie.jpg"
+  image: "../assets/team/earthrover_mini.png"
   link: false
   affiliation: "PKU Shenzhen"
 
 - name: "Zongying Li"
   role: "Visiting Students and Scholars"
-  image: "../assets/team/yukaima.jpeg"
+  image: "../assets/team/earthrover_mini.png"
   link: false
   affiliation: "PKU Shenzhen"
 
 - name: "Haoqiang Wang"
   role: "Visiting Students and Scholars"
-  image: "../assets/team/zhenghao.jpeg"
+  image: "../assets/team/earthrover_mini.png"
   link: false
   affiliation: "PKU Shenzhen"
 
 - name: "Qianshuo Hu"
   role: "Visiting Students and Scholars"
-  image: "../assets/team/joelin.jpeg"
+  image: "../assets/team/earthrover_mini.png"
   link: false
   affiliation: "PKU Shenzhen"
 
 - name: "Xin Du"
   role: "Visiting Students and Scholars"
-  image: "../assets/team/zhizheng.jpg"
+  image: "../assets/team/earthrover_mini.png"
   link: false
   affiliation: "PKU Shenzhen"
 
 - name: "Sheng Yan"
   role: "Visiting Students and Scholars"
-  image: "../assets/team/sichengmo.jpg"
+  image: "../assets/team/earthrover_mini.png"
   link: false
   affiliation: "PKU Shenzhen"
 
 - name: "Hongchang Jin"
   role: "Visiting Students and Scholars"
-  image: "../assets/team/haoyuancai.jpg"
+  image: "../assets/team/earthrover_mini.png"
   link: false
   affiliation: "PKU Shenzhen"
 
 - name: "Yi Wang"
   role: "Visiting Students and Scholars"
-  image: "../assets/team/zhihaozhao.jpeg"
+  image: "../assets/team/earthrover_mini.png"
   link: false
   affiliation: "PKU Shenzhen"
 
 - name: "Kefan Chen"
   role: "Visiting Students and Scholars"
-  image: "../assets/team/heewonpark.jpeg"
+  image: "../assets/team/earthrover_mini.png"
   link: false
   affiliation: "PKU Shenzhen"
 
 - name: "Chao Yuan"
   role: "Visiting Students and Scholars"
-  image: "../assets/team/honglinhe.jpg"
+  image: "../assets/team/earthrover_mini.png"
   link: false
   affiliation: "PKU Shenzhen"
 
 - name: "Yulei Yang"
   role: "Visiting Students and Scholars"
-  image: "../assets/team/matthewleng.jpg"
+  image: "../assets/team/earthrover_mini.png"
   link: false
   affiliation: "PKU Shenzhen"
 
