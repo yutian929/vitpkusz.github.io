@@ -1,7 +1,7 @@
 # Principal Investigator
 - name: "Mengyuan Liu"
   role: "Principal Investigator"
-  image: "../assets/img/vit-pkusz/mengyuan-liu.png"
+  image: "../assets/team/mengyuan-liu.png"
   link: false
   affiliation: "PKU Shenzhen"
 
@@ -16,7 +16,7 @@
 - name: "Xinshun Wang"
   role: "Ph.D. Students"
   image: "../assets/team/zhizheng.jpg"
-  link: false
+  link: "https://scholar.google.com/citations?user=NflmfmEAAAAJ&hl=en"
   affiliation: "PKU Shenzhen"
 
 - name: "Juyi Sheng"
