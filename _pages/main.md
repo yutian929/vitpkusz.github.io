@@ -15,6 +15,10 @@ highlighted_projects:
     caption:
     title: "DAP: Doppler-aware Point Network for Heterogeneous mmWave Action Recognition"
     link: /publications/
+  - teaser_img: /assets/img/vit-pkusz/skeletonllm.png
+    caption:
+    title: "Universal Skeleton Understanding via Differentiable Rendering and MLLMs"
+    link: /publications/
 ---
 
 <style>
