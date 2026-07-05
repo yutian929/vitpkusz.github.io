@@ -50,7 +50,7 @@ Selected publications from the Visual Intelligence Team.
   <div class="tag-buttons">
     <button class="tag-btn active" data-tag="all">All</button>
     <button class="tag-btn" data-tag="Computer Vision">Computer Vision</button>
-    <button class="tag-btn" data-tag="Signal Processing">Signal Processing</button>
+    <button class="tag-btn" data-tag="MLLM">Computer Vision</button>
     <button class="tag-btn" data-tag="Action Recognition">Action Recognition</button>
     <button class="tag-btn" data-tag="Others">Others</button>
   </div>
