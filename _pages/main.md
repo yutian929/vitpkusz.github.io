@@ -7,6 +7,10 @@ description:
 carousel_autoplay_delay: 3500
 
 highlighted_projects:
+  - teaser_img: /assets/img/vit-pkusz/unimotion.png
+    caption:
+    title: "UniMotion: A Unified Framework for Motion-Text-Vision Understanding and Generation"
+    link: /publications/
   - teaser_img: /assets/img/vit-pkusz/dap.png
     caption:
     title: "DAP: Doppler-aware Point Network for Heterogeneous mmWave Action Recognition"
