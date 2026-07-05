@@ -19,6 +19,10 @@ highlighted_projects:
     caption:
     title: "Universal Skeleton Understanding via Differentiable Rendering and MLLMs"
     link: /publications/
+  - teaser_img: /assets/img/vit-pkusz/superman.png
+    caption:
+    title: "Superman: Unifying Skeleton and Vision for Human Motion Perception and Generation"
+    link: /publications/
 ---
 
 <style>
