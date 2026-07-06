@@ -8,7 +8,7 @@
 # Postdoctoral Researchers
 - name: "Yuxuan Li"
   role: "Postdoctoral Researchers"
-  image: "../assets/team/earthrover_mini.png"
+  image: "../assets/team/liyuxuan.jpg"
   link: false
   affiliation: "PKU Shenzhen"
 
@@ -28,37 +28,37 @@
 # M.S. Students
 - name: "Ziyi Wang"
   role: "M.S. Students"
-  image: "../assets/team/earthrover_mini.png"
+  image: "../assets/team/wangziyi.png"
   link: false
   affiliation: "PKU Shenzhen"
 
 - name: "Peiming Li"
   role: "M.S. Students"
-  image: "../assets/team/earthrover_mini.png"
+  image: "../assets/team/lipeiming.jpg"
   link: false
   affiliation: "PKU Shenzhen"
 
 - name: "Yangting Lin"
   role: "M.S. Students"
-  image: "../assets/team/earthrover_mini.png"
+  image: "../assets/team/linyangting.jpg"
   link: false
   affiliation: "PKU Shenzhen"
 
 - name: "Yutian Zhang"
   role: "M.S. Students"
-  image: "../assets/team/earthrover_mini.png"
+  image: "../assets/team/zhangyutian.png"
   link: false
   affiliation: "PKU Shenzhen"
 
 - name: "Jiaying Lin"
   role: "M.S. Students"
-  image: "../assets/team/earthrover_mini.png"
+  image: "../assets/team/linjiaying.jpg"
   link: false
   affiliation: "PKU Shenzhen"
 
 - name: "Jianian Gong"
   role: "M.S. Students"
-  image: "../assets/team/earthrover_mini.png"
+  image: "../assets/team/gongjianian.jpg"
   link: false
   affiliation: "PKU Shenzhen"
 
@@ -70,7 +70,7 @@
 
 - name: "Jianyu Zhang"
   role: "M.S. Students"
-  image: "../assets/team/earthrover_mini.png"
+  image: "../assets/team/zhangjianyu.png"
   link: false
   affiliation: "PKU Shenzhen"
 
