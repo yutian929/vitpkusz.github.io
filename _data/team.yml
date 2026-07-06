@@ -28,7 +28,7 @@
 # M.S. Students
 - name: "Ziyi Wang"
   role: "M.S. Students"
-  image: "../assets/team/wangziyi.png"
+  image: "../assets/team/wangziyi.jpg"
   link: false
   affiliation: "PKU Shenzhen"
 
@@ -64,7 +64,7 @@
 
 - name: "Tianming Xu"
   role: "M.S. Students"
-  image: "../assets/team/earthrover_mini.png"
+  image: "../assets/team/xutianming.jpg"
   link: false
   affiliation: "PKU Shenzhen"
 
@@ -76,7 +76,7 @@
 
 - name: "Jincheng Li"
   role: "M.S. Students"
-  image: "../assets/team/earthrover_mini.png"
+  image: "../assets/team/lijincheng.png"
   link: false
   affiliation: "PKU Shenzhen"
 
