@@ -7,19 +7,19 @@ description:
 carousel_autoplay_delay: 3500
 
 highlighted_projects:
-  - teaser_img: /assets/img/vit-pkusz/unimotion.png
+  - teaser_img: /assets/teaser/wangziyi_unimotion.png
     caption:
     title: "UniMotion: A Unified Framework for Motion-Text-Vision Understanding and Generation"
     link: /publications/
-  - teaser_img: /assets/img/vit-pkusz/dap.png
+  - teaser_img: /assets/teaser/linjiaying_dap.png
     caption:
     title: "DAP: Doppler-aware Point Network for Heterogeneous mmWave Action Recognition"
     link: /publications/
-  - teaser_img: /assets/img/vit-pkusz/skeletonllm.png
+  - teaser_img: /assets/teaser/wangziyi_skeletonllm.png
     caption:
     title: "Universal Skeleton Understanding via Differentiable Rendering and MLLMs"
     link: /publications/
-  - teaser_img: /assets/img/vit-pkusz/superman.png
+  - teaser_img: /assets/teaser/wangxinshun_superman.png
     caption:
     title: "Superman: Unifying Skeleton and Vision for Human Motion Perception and Generation"
     link: /publications/
