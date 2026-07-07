@@ -21,7 +21,7 @@
 
 - name: "Juyi Sheng"
   role: "Ph.D. Students"
-  image: "../assets/team/earthrover_mini.png"
+  image: "../assets/team/shengjuyi.jpg"
   link: false
   affiliation: "PKU Shenzhen"
 
@@ -82,7 +82,7 @@
 
 - name: "Jiale Li"
   role: "M.S. Students"
-  image: "../assets/team/earthrover_mini.png"
+  image: "../assets/team/lijiale.png"
   link: false
   affiliation: "PKU Shenzhen"
 
@@ -99,113 +99,23 @@
   affiliation: "PKU Shenzhen"
 
 # Visiting Students and Scholars
-- name: "Wanying Zhang"
-  role: "Visiting Students and Scholars"
-  image: "../assets/team/earthrover_mini.png"
-  link: false
-  affiliation: "PKU Shenzhen"
-
-- name: "Zhongbing Fang"
-  role: "Visiting Students and Scholars"
-  image: "../assets/team/earthrover_mini.png"
-  link: false
-  affiliation: "PKU Shenzhen"
-
-- name: "Jinfu Liu"
-  role: "Visiting Students and Scholars"
-  image: "../assets/team/earthrover_mini.png"
-  link: false
-  affiliation: "PKU Shenzhen"
-
-- name: "Zhichao Deng"
-  role: "Visiting Students and Scholars"
-  image: "../assets/team/earthrover_mini.png"
-  link: false
-  affiliation: "PKU Shenzhen"
-
-- name: "Yuhang Wen"
-  role: "Visiting Students and Scholars"
-  image: "../assets/team/earthrover_mini.png"
-  link: false
-  affiliation: "PKU Shenzhen"
-
-- name: "Zixuan Tang"
-  role: "Visiting Students and Scholars"
-  image: "../assets/team/earthrover_mini.png"
-  link: false
-  affiliation: "PKU Shenzhen"
-
-- name: "Shidan He"
-  role: "Visiting Students and Scholars"
-  image: "../assets/team/earthrover_mini.png"
-  link: false
-  affiliation: "PKU Shenzhen"
-
-- name: "Yang Liu"
-  role: "Visiting Students and Scholars"
-  image: "../assets/team/earthrover_mini.png"
-  link: false
-  affiliation: "PKU Shenzhen"
-
-- name: "Zongying Li"
-  role: "Visiting Students and Scholars"
-  image: "../assets/team/earthrover_mini.png"
-  link: false
-  affiliation: "PKU Shenzhen"
-
-- name: "Haoqiang Wang"
-  role: "Visiting Students and Scholars"
-  image: "../assets/team/earthrover_mini.png"
-  link: false
-  affiliation: "PKU Shenzhen"
-
-- name: "Qianshuo Hu"
-  role: "Visiting Students and Scholars"
-  image: "../assets/team/earthrover_mini.png"
-  link: false
-  affiliation: "PKU Shenzhen"
-
-- name: "Xin Du"
-  role: "Visiting Students and Scholars"
-  image: "../assets/team/earthrover_mini.png"
-  link: false
-  affiliation: "PKU Shenzhen"
-
-- name: "Sheng Yan"
-  role: "Visiting Students and Scholars"
-  image: "../assets/team/earthrover_mini.png"
-  link: false
-  affiliation: "PKU Shenzhen"
-
-- name: "Hongchang Jin"
-  role: "Visiting Students and Scholars"
-  image: "../assets/team/earthrover_mini.png"
-  link: false
-  affiliation: "PKU Shenzhen"
-
-- name: "Yi Wang"
-  role: "Visiting Students and Scholars"
-  image: "../assets/team/earthrover_mini.png"
-  link: false
-  affiliation: "PKU Shenzhen"
-
 - name: "Kefan Chen"
   role: "Visiting Students and Scholars"
-  image: "../assets/team/earthrover_mini.png"
+  image: "../assets/team/chenkefan.jpg"
   link: false
-  affiliation: "PKU Shenzhen"
+  affiliation: "Chongqing University of Technology"
 
 - name: "Chao Yuan"
   role: "Visiting Students and Scholars"
-  image: "../assets/team/earthrover_mini.png"
+  image: "../assets/team/yuanchao.jpg"
   link: false
-  affiliation: "PKU Shenzhen"
+  affiliation: "Chongqing University of Technology"
 
 - name: "Yulei Yang"
   role: "Visiting Students and Scholars"
-  image: "../assets/team/earthrover_mini.png"
+  image: "../assets/team/yangyulei.jpg"
   link: false
-  affiliation: "PKU Shenzhen"
+  affiliation: "Chongqing University of Technology"
 
 # Alumni
 - name: "Jiajie Liu"
@@ -231,3 +141,63 @@
   link: false
   year: "2026"
   affiliation: "PKU Shenzhen"
+
+- name: "Wanying Zhang"
+  role: "Alumni - Visiting Students and Scholars"
+  link: false
+
+- name: "Zhongbing Fang"
+  role: "Alumni - Visiting Students and Scholars"
+  link: false
+
+- name: "Jinfu Liu"
+  role: "Alumni - Visiting Students and Scholars"
+  link: false
+
+- name: "Zhichao Deng"
+  role: "Alumni - Visiting Students and Scholars"
+  link: false
+
+- name: "Yuhang Wen"
+  role: "Alumni - Visiting Students and Scholars"
+  link: false
+
+- name: "Zixuan Tang"
+  role: "Alumni - Visiting Students and Scholars"
+  link: false
+
+- name: "Shidan He"
+  role: "Alumni - Visiting Students and Scholars"
+  link: false
+
+- name: "Yang Liu"
+  role: "Alumni - Visiting Students and Scholars"
+  link: false
+
+- name: "Zongying Li"
+  role: "Alumni - Visiting Students and Scholars"
+  link: false
+
+- name: "Haoqiang Wang"
+  role: "Alumni - Visiting Students and Scholars"
+  link: false
+
+- name: "Qianshuo Hu"
+  role: "Alumni - Visiting Students and Scholars"
+  link: false
+
+- name: "Xin Du"
+  role: "Alumni - Visiting Students and Scholars"
+  link: false
+
+- name: "Sheng Yan"
+  role: "Alumni - Visiting Students and Scholars"
+  link: false
+
+- name: "Hongchang Jin"
+  role: "Alumni - Visiting Students and Scholars"
+  link: false
+
+- name: "Yi Wang"
+  role: "Alumni - Visiting Students and Scholars"
+  link: false
